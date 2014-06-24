@@ -1,0 +1,942 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='ThemeBucket')
+    link(rel='shortcut icon', href='images/favicon.png')
+    title Profile
+    // Core CSS
+    link(href='bs3/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/bootstrap-reset.css', rel='stylesheet')
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='js/ie8/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body
+    section#container
+      // header start
+      header.header.fixed-top.clearfix
+        // logo start
+        .brand
+          a.logo(href='index.html')
+            img(src='images/logo.png', alt='')
+          .sidebar-toggle-box
+            .fa.fa-bars
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-tasks
+                span.badge.bg-success 8
+              ul.dropdown-menu.extended.tasks-bar
+                li
+                  p You have 8 pending tasks
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 25% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='45')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Product Delivery
+                        p 45% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='78')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Payment collection
+                        p 87% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='60')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 33% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='90')
+                        span.percent
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-envelope-o
+                span.badge.bg-important 4
+              ul.dropdown-menu.extended.inbox
+                li
+                  p.red You have 4 Mails
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Jonathan Smith
+                      span.time Just now
+                    span.message
+                      | Hello, this is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-2.jpg')
+                    span.subject
+                      span.from Jane Doe
+                      span.time 2 min ago
+                    span.message
+                      | Nice admin template
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-3.jpg')
+                    span.subject
+                      span.from Tasi sam
+                      span.time 2 days ago
+                    span.message
+                      | This is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Mr. Perfect
+                      span.time 2 hour ago
+                    span.message
+                      | Hi there, its a test
+                li
+                  a(href='#') See all messages
+            // inbox dropdown end
+            // notification dropdown start
+            li#header_notification_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-bell-o
+                span.badge.bg-warning 3
+              ul.dropdown-menu.extended.notification
+                li
+                  p Notifications
+                li
+                  .alert.alert-info.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #1 overloaded.
+                li
+                  .alert.alert-danger.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #2 overloaded.
+                li
+                  .alert.alert-success.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #3 overloaded.
+            // notification dropdown end
+          // notification end
+        .top-nav.clearfix
+          // search & user info start
+          ul.nav.pull-right.top-menu
+            li
+              input.form-control.search(type='text', placeholder=' Search')
+            // user login dropdown start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                img(alt='', src='images/avatar1_small.jpg')
+                span.username John Doe
+                b.caret
+              ul.dropdown-menu.extended.logout
+                li
+                  a(href='#')
+                    i.fa.fa-suitcase
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-cog
+                    |  Settings
+                li
+                  a(href='login.html')
+                    i.fa.fa-key
+                    |  Log Out
+            // user login dropdown end
+            li
+              .toggle-right-box
+                .fa.fa-bars
+          // search & user info end
+      // header end
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          .leftside-navigation
+            ul#nav-accordion.sidebar-menu
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  span Dashboard
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-laptop
+                  span Layouts
+                ul.sub
+                  li
+                    a(href='boxed_page.html') Boxed Page
+                  li
+                    a(href='horizontal_menu.html') Horizontal Menu
+                  li
+                    a(href='language_switch.html') Language Switch Bar
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-book
+                  span UI Elements
+                ul.sub
+                  li
+                    a(href='general.html') General
+                  li
+                    a(href='buttons.html') Buttons
+                  li
+                    a(href='widget.html') Widget
+                  li
+                    a(href='slider.html') Slider
+                  li
+                    a(href='tree_view.html') Tree View
+                  li
+                    a(href='nestable.html') Nestable
+                  li
+                    a(href='grids.html') Grids
+                  li
+                    a(href='calendar.html') Calender
+                  li
+                    a(href='draggable_portlet.html') Draggable Portlet
+              li
+                a(href='fontawesome.html')
+                  i.fa.fa-bullhorn
+                  span Fontawesome 
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-th
+                  span Data Tables
+                ul.sub
+                  li
+                    a(href='basic_table.html') Basic Table
+                  li
+                    a(href='responsive_table.html') Responsive Table
+                  li
+                    a(href='dynamic_table.html') Dynamic Table
+                  li
+                    a(href='editable_table.html') Editable Table
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-tasks
+                  span Form Components
+                ul.sub
+                  li
+                    a(href='form_component.html') Form Elements
+                  li
+                    a(href='advanced_form.html') Advanced Components
+                  li
+                    a(href='form_wizard.html') Form Wizard
+                  li
+                    a(href='form_validation.html') Form Validation
+                  li
+                    a(href='file_upload.html') Muliple File Upload
+                  li
+                    a(href='dropzone.html') Dropzone
+                  li
+                    a(href='inline_editor.html') Inline Editor
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-envelope
+                  span Mail 
+                ul.sub
+                  li
+                    a(href='mail.html') Inbox
+                  li
+                    a(href='mail_compose.html') Compose Mail
+                  li
+                    a(href='mail_view.html') View Mail
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Charts
+                ul.sub
+                  li
+                    a(href='morris.html') Morris
+                  li
+                    a(href='chartjs.html') Chartjs
+                  li
+                    a(href='flot_chart.html') Flot Charts
+                  li
+                    a(href='c3_chart.html') C3 Chart
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Maps
+                ul.sub
+                  li
+                    a(href='google_map.html') Google Map
+                  li
+                    a(href='vector_map.html') Vector Map
+              li.sub-menu
+                a.active(href='javascript:;')
+                  i.fa.fa-glass
+                  span Extra
+                ul.sub
+                  li
+                    a(href='blank.html') Blank Page
+                  li
+                    a(href='lock_screen.html') Lock Screen
+                  li.active
+                    a(href='profile.html') Profile
+                  li
+                    a(href='invoice.html') Invoice
+                  li
+                    a(href='pricing_table.html') Pricing Table
+                  li
+                    a(href='timeline.html') Timeline
+                  li
+                    a(href='gallery.html') Media Gallery
+                  li
+                    a(href='404.html') 404 Error
+                  li
+                    a(href='500.html') 500 Error
+                  li
+                    a(href='registration.html') Registration
+              li
+                a(href='login.html')
+                  i.fa.fa-user
+                  span Login Page
+          // sidebar menu end
+      // sidebar end
+      // main content start
+      section#main-content
+        section.wrapper
+          // page start
+          .row
+            .col-md-12
+              section.panel
+                .panel-body.profile-information
+                  .col-md-3
+                    .profile-pic.text-center
+                      img(src='images/lock_thumb.jpg', alt='')
+                  .col-md-6
+                    .profile-desk
+                      h1 David Rojormillan
+                      span.text-muted Product Manager
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor vestibulum imperdiet. Ut auctor accumsan erat, a vulputate metus tristique non. Aliquam aliquam vel orci quis sagittis.
+                      a.btn.btn-primary(href='#') View Profile
+                  .col-md-3
+                    .profile-statistics
+                      h1 1240
+                      p This Week Sales
+                      h1 $5,61,240
+                      p This Week Earn
+                      ul
+                        li
+                          a(href='#')
+                            i.fa.fa-facebook
+                        li.active
+                          a(href='#')
+                            i.fa.fa-twitter
+                        li
+                          a(href='#')
+                            i.fa.fa-google-plus
+            .col-md-12
+              section.panel
+                header.panel-heading.tab-bg-dark-navy-blue
+                  ul.nav.nav-tabs.nav-justified
+                    li.active
+                      a(data-toggle='tab', href='#overview')
+                        | Overview
+                    li
+                      a(data-toggle='tab', href='#job-history')
+                        | Job History
+                    li
+                      a.contact-map(data-toggle='tab', href='#contacts')
+                        | Contacts
+                    li
+                      a(data-toggle='tab', href='#settings')
+                        | Settings
+                .panel-body
+                  .tab-content.tasi-tab
+                    #overview.tab-pane.active
+                      .row
+                        .col-md-8
+                          .recent-act
+                            h1 Recent Activity
+                            .activity-icon.terques
+                              i.fa.fa-check
+                            .activity-desk
+                              h2 1 Hour Ago
+                              p Purchased new stationary items for head office
+                            .activity-icon.red
+                              i.fa.fa-beer
+                            .activity-desk
+                              h2.red 2 Hour Ago
+                              p
+                                | Completed Coffee meeting with 
+                                a.terques(href='#') Stive Martin
+                                |  regarding the Product Promotion
+                            .activity-icon.purple
+                              i.fa.fa-tags
+                            .activity-desk
+                              h2.purple today evening
+                              p 3 photo Uploaded on facebook product page
+                              .photo-gl
+                                a(href='#')
+                                  img(src='images/sm-img-1.jpg', alt='')
+                                a(href='#')
+                                  img(src='images/sm-img-2.jpg', alt='')
+                                a(href='#')
+                                  img(src='images/sm-img-3.jpg', alt='')
+                            .activity-icon.green
+                              i.fa.fa-map-marker
+                            .activity-desk
+                              h2.green yesterday
+                              p
+                                | Outdoor visit at 
+                                a.blue(href='#') California State Route
+                                |  85 with 
+                                a.terques(href='#') John Boltana
+                                |  &amp; 
+                                a.terques(href='#') Harry Piterson
+                                |  regarding to setup a new show room.
+                              .loc-map
+                                | location map goes here
+                            .activity-icon.yellow
+                              i.fa.fa-user-md
+                            .activity-desk
+                              h2.yellow 12 december 2013
+                              p Montly Regular Medical check up at Greenland Hospital.
+                        .col-md-4
+                          .prf-box
+                            h3.prf-border-head work in progress
+                            .wk-progress
+                              .col-md-5 Themeforest
+                              .col-md-5
+                                .progress
+                                  .progress-bar.progress-bar-danger(style='width: 70%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='40', role='progressbar')
+                                    span.sr-only 70% Complete (success)
+                              .col-md-2 70%
+                            .wk-progress
+                              .col-md-5 Graphics River
+                              .col-md-5
+                                .progress
+                                  .progress-bar.progress-bar-success(style='width: 57%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='40', role='progressbar')
+                                    span.sr-only 57% Complete (success)
+                              .col-md-2 57%
+                            .wk-progress
+                              .col-md-5 Code Canyon
+                              .col-md-5
+                                .progress
+                                  .progress-bar.progress-bar-info(style='width: 20%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='40', role='progressbar')
+                                    span.sr-only 20% Complete (success)
+                              .col-md-2 20%
+                            .wk-progress
+                              .col-md-5 Audio Jungle
+                              .col-md-5
+                                .progress
+                                  .progress-bar.progress-bar-warning(style='width: 30%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='40', role='progressbar')
+                                    span.sr-only 30% Complete (success)
+                              .col-md-2 30%
+                          .prf-box
+                            h3.prf-border-head performance status
+                            .wk-progress.pf-status
+                              .col-md-8.col-xs-8 Total Product Sales
+                              .col-md-4.col-xs-4
+                                strong 23545
+                            .wk-progress.pf-status
+                              .col-md-8.col-xs-8 Total Product Refer
+                              .col-md-4.col-xs-4
+                                strong 235
+                            .wk-progress.pf-status
+                              .col-md-8.col-xs-8 Total Earn
+                              .col-md-4.col-xs-4
+                                strong 235452344$
+                          .prf-box
+                            h3.prf-border-head team members
+                            .wk-progress.tm-membr
+                              .col-md-2.col-xs-2
+                                .tm-avatar
+                                  img(src='images/lock_thumb.jpg', alt='')
+                              .col-md-7.col-xs-7
+                                span.tm John Boltana
+                              .col-md-3.col-xs-3
+                                a.btn.btn-white(href='#') Assign
+                            .wk-progress.tm-membr
+                              .col-md-2.col-xs-2
+                                .tm-avatar
+                                  img(src='images/avatar-mini-2.jpg', alt='')
+                              .col-md-7.col-xs-7
+                                span.tm John Boltana
+                              .col-md-3.col-xs-3
+                                a.btn.btn-white(href='#') Assign
+                            .wk-progress.tm-membr
+                              .col-md-2.col-xs-2
+                                .tm-avatar
+                                  img(src='images/avatar-mini-3.jpg', alt='')
+                              .col-md-7.col-xs-7
+                                span.tm John Boltana
+                              .col-md-3.col-xs-3
+                                a.btn.btn-white(href='#') Assign
+                            .wk-progress.tm-membr
+                              .col-md-2.col-xs-2
+                                .tm-avatar
+                                  img(src='images/avatar-mini-4.jpg', alt='')
+                              .col-md-7.col-xs-7
+                                span.tm John Boltana
+                              .col-md-3.col-xs-3
+                                a.btn.btn-white(href='#') Assign
+                    #job-history.tab-pane
+                      .row
+                        .col-md-12
+                          .timeline-messages
+                            h3 Take a Tour
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 13 January 2013
+                                  .second.bg-terques
+                                    | Join as Product Asst. Manager
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 10 February 2012
+                                  .second.bg-red
+                                    | Completed Provition period and Appointed as a permanent Employee
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 2 January 2011
+                                  .second.bg-purple
+                                    | Selected Employee of the Month
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 4 March 2010
+                                  .second.bg-green
+                                    | Got Promotion and become area manager of California
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 3 April 2009
+                                  .second.bg-yellow
+                                    | Selected the Best Employee of the Year 2013 and was awarded
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 23 May 2008
+                                  .second.bg-terques
+                                    | Got Promotion and become Product Manager and was transper from Branch to Head Office. Lorem ipsum dolor sit amet
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 14 June 2007
+                                  .second.bg-blue
+                                    | Height Sales scored and break all of the previous sales record ever in the company. Awarded
+                            // /comment
+                            // Comment
+                            .msg-time-chat
+                              .message-body.msg-in
+                                span.arrow
+                                .text
+                                  .first
+                                    | 1 January 2006
+                                  .second.bg-green
+                                    | Take 15 days leave for his wedding and Honeymoon &amp; Christmas
+                            // /comment
+                    #contacts.tab-pane
+                      .row
+                        .col-md-6
+                          .prf-contacts
+                            h2
+                              span
+                                i.fa.fa-map-marker
+                              |  location
+                            .location-info
+                              p
+                                | Postal Address
+                                br
+                                |                                                     PO Box 16122 Collins Street West
+                                br
+                                |                                                     Victoria 8007 Australia
+                              p
+                                | Headquarters
+                                br
+                                |                                                     121 King Street, Melbourne
+                                br
+                                |                                                     Victoria 3000 Australia
+                            h2
+                              span
+                                i.fa.fa-phone
+                              |  contacts
+                            .location-info
+                              p
+                                | Phone&#x9;: +61 3 8376 6284 
+                                br
+                                |                                                     Cell&#x9;&#x9;: +61 3 8376 6284
+                              p
+                                | Email&#x9;&#x9;: david@themebucket.net
+                                br
+                                |                                                     Skype&#x9;&#x9;: david.rojormillan
+                              p
+                                | Facebook&#x9;: https://www.facebook.com/themebuckets 
+                                br
+                                |                                                     Twitter&#x9;: https://twitter.com/theme_bucket
+                        .col-md-6
+                          #map-canvas
+                    #settings.tab-pane
+                      .position-center
+                        .prf-contacts.sttng
+                          h2   Personal Information
+                        form.form-horizontal(role='form')
+                          .form-group
+                            label.col-lg-2.control-label  Avatar
+                            .col-lg-6
+                              input#exampleInputFile.file-pos(type='file')
+                          .form-group
+                            label.col-lg-2.control-label Company
+                            .col-lg-6
+                              input#c-name.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Lives In
+                            .col-lg-6
+                              input#lives-in.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Country
+                            .col-lg-6
+                              input#country.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Description
+                            .col-lg-10
+                              textarea.form-control(rows='10', cols='30', name='')
+                        .prf-contacts.sttng
+                          h2  socail networks
+                        form.form-horizontal(role='form')
+                          .form-group
+                            label.col-lg-2.control-label Facebook
+                            .col-lg-6
+                              input#fb-name.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Twitter
+                            .col-lg-6
+                              input#twitter.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Google plus
+                            .col-lg-6
+                              input#g-plus.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Flicr
+                            .col-lg-6
+                              input#flicr.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Youtube
+                            .col-lg-6
+                              input#youtube.form-control(type='text', placeholder=' ')
+                        .prf-contacts.sttng
+                          h2 Contact
+                        form.form-horizontal(role='form')
+                          .form-group
+                            label.col-lg-2.control-label Address 1
+                            .col-lg-6
+                              input#addr1.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Address 2
+                            .col-lg-6
+                              input#addr2.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Phone
+                            .col-lg-6
+                              input#phone.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Cell
+                            .col-lg-6
+                              input#cell.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Email
+                            .col-lg-6
+                              input#email.form-control(type='text', placeholder=' ')
+                          .form-group
+                            label.col-lg-2.control-label Skype
+                            .col-lg-6
+                              input#skype.form-control(type='text', placeholder=' ')
+                          .form-group
+                            .col-lg-offset-2.col-lg-10
+                              button.btn.btn-primary(type='submit') Save
+                              button.btn.btn-default(type='button') Cancel
+          // page end
+      // main content end
+      // right sidebar start
+      .right-sidebar
+        .search-row
+          input.form-control(type='text', placeholder='Search')
+        .right-stat-bar
+          ul.right-side-accordion
+            li.widget-collapsible
+              a.head.widget-head.red-bg.active.clearfix(href='#')
+                span.pull-left work progress (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row.side-mini-stat.clearfix
+                    .side-graph-info
+                      h4 Target sell
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .target-sell
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 product delivery
+                      p
+                        | 55%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-delivery
+                        .sparkline(data-type='bar', data-resize='true', data-height='30', data-width='90%', data-bar-color='#39b7ab', data-bar-width='5', data-data='[200,135,667,333,526,996,564,123,890,564,455]')
+                  .prog-row.side-mini-stat
+                    .side-graph-info.payment-info
+                      h4 payment collection
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-collection
+                        span.pc-epie-chart(data-percent='45')
+                          span.percent
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 delivery pending
+                      p
+                        | 44%, Deadline 12 june 13
+                    .side-mini-graph
+                      .d-pending
+                  .prog-row.side-mini-stat
+                    .col-md-12
+                      h4 total progress
+                      p
+                        | 50%, Deadline 12 june 13
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(style='width: 50%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='20', role='progressbar')
+                          span.sr-only 50% Complete
+            li.widget-collapsible
+              a.head.widget-head.terques-bg.active.clearfix(href='#')
+                span.pull-left contact online (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Jonathan Smith
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Anjelina Joe
+                      p
+                        | Available
+                    .user-status.text-success
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/chat-avatar2.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') John Doe
+                      p
+                        | Away from Desk
+                    .user-status.text-warning
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Mark Henry
+                      p
+                        | working
+                    .user-status.text-info
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Shila Jones
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  p.text-center
+                    a.view-btn(href='#') View all Contacts
+            li.widget-collapsible
+              a.head.widget-head.purple-bg.active(href='#')
+                span.pull-left  recent activity (3)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | just now
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 2 min ago
+                      p
+                        a(href='#') Jane Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 1 day ago
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+            li.widget-collapsible
+              a.head.widget-head.yellow-bg.active(href='#')
+                span.pull-left  shipment status
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .col-md-12
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only 40% Complete
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                          span.sr-only 70% Completed
+      // right sidebar end
+    // Placed js at the end of the document so the pages load faster
+    // Core js
+    script(src='js/lib/jquery.js')
+    script(src='bs3/js/bootstrap.min.js')
+    script.include(type='text/javascript', src='js/accordion-menu/jquery.dcjqaccordion.2.7.js')
+    script(src='js/scrollTo/jquery.scrollTo.min.js')
+    script(src='assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js')
+    script(src='js/nicescroll/jquery.nicescroll.js')
+    // Easy Pie Chart
+    script(src='assets/easypiechart/jquery.easypiechart.js')
+    // Sparkline Chart
+    script(src='assets/sparkline/jquery.sparkline.js')
+    // jQuery Flot Chart
+    script(src='assets/flot-chart/jquery.flot.js')
+    script(src='assets/flot-chart/jquery.flot.tooltip.min.js')
+    script(src='assets/flot-chart/jquery.flot.resize.js')
+    script(src='assets/flot-chart/jquery.flot.pie.resize.js')
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false')
+    // common script init for all pages
+    script(src='js/scripts.js')
+    script.
+      //google map
+      function initialize() {
+      var myLatlng = new google.maps.LatLng(-37.815207, 144.963937);
+      var mapOptions = {
+      zoom: 15,
+      scrollwheel: false,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+      });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+      $('.contact-map').click(function(){
+      //google map in tab click initialize
+      function initialize() {
+      var myLatlng = new google.maps.LatLng(-37.815207, 144.963937);
+      var mapOptions = {
+      zoom: 15,
+      scrollwheel: false,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+      });
+      }
+      google.maps.event.addDomListener(window, 'click', initialize);
+      });

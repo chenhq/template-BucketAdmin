@@ -1,0 +1,2421 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='ThemeBucket')
+    link(rel='shortcut icon', href='images/favicon.png')
+    title Fontawesome
+    // Core CSS
+    link(href='bs3/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/bootstrap-reset.css', rel='stylesheet')
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='js/ie8/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body
+    section#container
+      // header start
+      header.header.fixed-top.clearfix
+        // logo start
+        .brand
+          a.logo(href='index.html')
+            img(src='images/logo.png', alt='')
+          .sidebar-toggle-box
+            .fa.fa-bars
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-tasks
+                span.badge.bg-success 8
+              ul.dropdown-menu.extended.tasks-bar
+                li
+                  p You have 8 pending tasks
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 25% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='45')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Product Delivery
+                        p 45% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='78')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Payment collection
+                        p 87% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='60')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 33% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='90')
+                        span.percent
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-envelope-o
+                span.badge.bg-important 4
+              ul.dropdown-menu.extended.inbox
+                li
+                  p.red You have 4 Mails
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Jonathan Smith
+                      span.time Just now
+                    span.message
+                      | Hello, this is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-2.jpg')
+                    span.subject
+                      span.from Jane Doe
+                      span.time 2 min ago
+                    span.message
+                      | Nice admin template
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-3.jpg')
+                    span.subject
+                      span.from Tasi sam
+                      span.time 2 days ago
+                    span.message
+                      | This is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Mr. Perfect
+                      span.time 2 hour ago
+                    span.message
+                      | Hi there, its a test
+                li
+                  a(href='#') See all messages
+            // inbox dropdown end
+            // notification dropdown start
+            li#header_notification_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-bell-o
+                span.badge.bg-warning 3
+              ul.dropdown-menu.extended.notification
+                li
+                  p Notifications
+                li
+                  .alert.alert-info.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #1 overloaded.
+                li
+                  .alert.alert-danger.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #2 overloaded.
+                li
+                  .alert.alert-success.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #3 overloaded.
+            // notification dropdown end
+          // notification end
+        .top-nav.clearfix
+          // search & user info start
+          ul.nav.pull-right.top-menu
+            li
+              input.form-control.search(type='text', placeholder=' Search')
+            // user login dropdown start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                img(alt='', src='images/avatar1_small.jpg')
+                span.username John Doe
+                b.caret
+              ul.dropdown-menu.extended.logout
+                li
+                  a(href='#')
+                    i.fa.fa-suitcase
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-cog
+                    |  Settings
+                li
+                  a(href='login.html')
+                    i.fa.fa-key
+                    |  Log Out
+            // user login dropdown end
+            li
+              .toggle-right-box
+                .fa.fa-bars
+          // search & user info end
+      // header end
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          .leftside-navigation
+            ul#nav-accordion.sidebar-menu
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  span Dashboard
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-laptop
+                  span Layouts
+                ul.sub
+                  li
+                    a(href='boxed_page.html') Boxed Page
+                  li
+                    a(href='horizontal_menu.html') Horizontal Menu
+                  li
+                    a(href='language_switch.html') Language Switch Bar
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-book
+                  span UI Elements
+                ul.sub
+                  li
+                    a(href='general.html') General
+                  li
+                    a(href='buttons.html') Buttons
+                  li
+                    a(href='widget.html') Widget
+                  li
+                    a(href='slider.html') Slider
+                  li
+                    a(href='tree_view.html') Tree View
+                  li
+                    a(href='nestable.html') Nestable
+                  li
+                    a(href='grids.html') Grids
+                  li
+                    a(href='calendar.html') Calender
+                  li
+                    a(href='draggable_portlet.html') Draggable Portlet
+              li
+                a.active(href='fontawesome.html')
+                  i.fa.fa-bullhorn
+                  span Fontawesome 
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-th
+                  span Data Tables
+                ul.sub
+                  li
+                    a(href='basic_table.html') Basic Table
+                  li
+                    a(href='responsive_table.html') Responsive Table
+                  li
+                    a(href='dynamic_table.html') Dynamic Table
+                  li
+                    a(href='editable_table.html') Editable Table
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-tasks
+                  span Form Components
+                ul.sub
+                  li
+                    a(href='form_component.html') Form Elements
+                  li
+                    a(href='advanced_form.html') Advanced Components
+                  li
+                    a(href='form_wizard.html') Form Wizard
+                  li
+                    a(href='form_validation.html') Form Validation
+                  li
+                    a(href='file_upload.html') Muliple File Upload
+                  li
+                    a(href='dropzone.html') Dropzone
+                  li
+                    a(href='inline_editor.html') Inline Editor
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-envelope
+                  span Mail 
+                ul.sub
+                  li
+                    a(href='mail.html') Inbox
+                  li
+                    a(href='mail_compose.html') Compose Mail
+                  li
+                    a(href='mail_view.html') View Mail
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Charts
+                ul.sub
+                  li
+                    a(href='morris.html') Morris
+                  li
+                    a(href='chartjs.html') Chartjs
+                  li
+                    a(href='flot_chart.html') Flot Charts
+                  li
+                    a(href='c3_chart.html') C3 Chart
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Maps
+                ul.sub
+                  li
+                    a(href='google_map.html') Google Map
+                  li
+                    a(href='vector_map.html') Vector Map
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-glass
+                  span Extra
+                ul.sub
+                  li
+                    a(href='blank.html') Blank Page
+                  li
+                    a(href='lock_screen.html') Lock Screen
+                  li
+                    a(href='profile.html') Profile
+                  li
+                    a(href='invoice.html') Invoice
+                  li
+                    a(href='pricing_table.html') Pricing Table
+                  li
+                    a(href='timeline.html') Timeline
+                  li
+                    a(href='gallery.html') Media Gallery
+                  li
+                    a(href='404.html') 404 Error
+                  li
+                    a(href='500.html') 500 Error
+                  li
+                    a(href='registration.html') Registration
+              li
+                a(href='login.html')
+                  i.fa.fa-user
+                  span Login Page
+          // sidebar menu end
+      // sidebar end
+      // main content start
+      section#main-content
+        .wrapper
+          .fontawesome-icon-list
+            #new
+              h2.page-header 11 New Icons in 4.0
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-rub
+                    |  fa-rub
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-ruble
+                    |  fa-ruble 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-rouble
+                    |  fa-rouble 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-pagelines
+                    |  fa-pagelines
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-stack-exchange
+                    |  fa-stack-exchange
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-arrow-circle-o-right
+                    |  fa-arrow-circle-o-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-arrow-circle-o-left
+                    |  fa-arrow-circle-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-caret-square-o-left
+                    |  fa-caret-square-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-toggle-left
+                    |  fa-toggle-left 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-dot-circle-o
+                    |  fa-dot-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-wheelchair
+                    |  fa-wheelchair
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-vimeo-square
+                    |  fa-vimeo-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-try
+                    |  fa-try
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-turkish-lira
+                    |  fa-turkish-lira 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-plus-square-o
+                    |  fa-plus-square-o
+            section#web-application
+              h2.page-header Web Application Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-adjust
+                    |  fa-adjust
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-anchor
+                    |  fa-anchor
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-archive
+                    |  fa-archive
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-arrows
+                    |  fa-arrows
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-arrows-h
+                    |  fa-arrows-h
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-arrows-v
+                    |  fa-arrows-v
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-asterisk
+                    |  fa-asterisk
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-ban
+                    |  fa-ban
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bar-chart-o
+                    |  fa-bar-chart-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-barcode
+                    |  fa-barcode
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bars
+                    |  fa-bars
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-beer
+                    |  fa-beer
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bell
+                    |  fa-bell
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bell-o
+                    |  fa-bell-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bolt
+                    |  fa-bolt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-book
+                    |  fa-book
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bookmark
+                    |  fa-bookmark
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bookmark-o
+                    |  fa-bookmark-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-briefcase
+                    |  fa-briefcase
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bug
+                    |  fa-bug
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-building-o
+                    |  fa-building-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bullhorn
+                    |  fa-bullhorn
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-bullseye
+                    |  fa-bullseye
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-calendar
+                    |  fa-calendar
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-calendar-o
+                    |  fa-calendar-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-camera
+                    |  fa-camera
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-camera-retro
+                    |  fa-camera-retro
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-caret-square-o-down
+                    |  fa-caret-square-o-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-caret-square-o-left
+                    |  fa-caret-square-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-caret-square-o-right
+                    |  fa-caret-square-o-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-caret-square-o-up
+                    |  fa-caret-square-o-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-certificate
+                    |  fa-certificate
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-check
+                    |  fa-check
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-check-circle
+                    |  fa-check-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-check-circle-o
+                    |  fa-check-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-check-square
+                    |  fa-check-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-check-square-o
+                    |  fa-check-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-circle
+                    |  fa-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-circle-o
+                    |  fa-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-clock-o
+                    |  fa-clock-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cloud
+                    |  fa-cloud
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cloud-download
+                    |  fa-cloud-download
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cloud-upload
+                    |  fa-cloud-upload
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-code
+                    |  fa-code
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-code-fork
+                    |  fa-code-fork
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-coffee
+                    |  fa-coffee
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cog
+                    |  fa-cog
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cogs
+                    |  fa-cogs
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-comment
+                    |  fa-comment
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-comment-o
+                    |  fa-comment-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-comments
+                    |  fa-comments
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-comments-o
+                    |  fa-comments-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-compass
+                    |  fa-compass
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-credit-card
+                    |  fa-credit-card
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-crop
+                    |  fa-crop
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-crosshairs
+                    |  fa-crosshairs
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-cutlery
+                    |  fa-cutlery
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-dashboard
+                    |  fa-dashboard 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-desktop
+                    |  fa-desktop
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-dot-circle-o
+                    |  fa-dot-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-download
+                    |  fa-download
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-edit
+                    |  fa-edit 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-ellipsis-h
+                    |  fa-ellipsis-h
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-ellipsis-v
+                    |  fa-ellipsis-v
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-envelope
+                    |  fa-envelope
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-envelope-o
+                    |  fa-envelope-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-eraser
+                    |  fa-eraser
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-exchange
+                    |  fa-exchange
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-exclamation
+                    |  fa-exclamation
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-exclamation-circle
+                    |  fa-exclamation-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-exclamation-triangle
+                    |  fa-exclamation-triangle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-external-link
+                    |  fa-external-link
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-external-link-square
+                    |  fa-external-link-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-eye
+                    |  fa-eye
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-eye-slash
+                    |  fa-eye-slash
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-female
+                    |  fa-female
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-fighter-jet
+                    |  fa-fighter-jet
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-film
+                    |  fa-film
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-filter
+                    |  fa-filter
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-fire
+                    |  fa-fire
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-fire-extinguisher
+                    |  fa-fire-extinguisher
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-flag
+                    |  fa-flag
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-flag-checkered
+                    |  fa-flag-checkered
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-flag-o
+                    |  fa-flag-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-flash
+                    |  fa-flash 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-flask
+                    |  fa-flask
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-folder
+                    |  fa-folder
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-folder-o
+                    |  fa-folder-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-folder-open
+                    |  fa-folder-open
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-folder-open-o
+                    |  fa-folder-open-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-frown-o
+                    |  fa-frown-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-gamepad
+                    |  fa-gamepad
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-gavel
+                    |  fa-gavel
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-gear
+                    |  fa-gear 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-gears
+                    |  fa-gears 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-gift
+                    |  fa-gift
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-glass
+                    |  fa-glass
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-globe
+                    |  fa-globe
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-group
+                    |  fa-group 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-hdd-o
+                    |  fa-hdd-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-headphones
+                    |  fa-headphones
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-heart
+                    |  fa-heart
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-heart-o
+                    |  fa-heart-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-home
+                    |  fa-home
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-inbox
+                    |  fa-inbox
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#')
+                    i.fa.fa-info
+                    |  fa-info
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#info-circle')
+                    i.fa.fa-info-circle
+                    |  fa-info-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#key')
+                    i.fa.fa-key
+                    |  fa-key
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#keyboard-o')
+                    i.fa.fa-keyboard-o
+                    |  fa-keyboard-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#laptop')
+                    i.fa.fa-laptop
+                    |  fa-laptop
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#leaf')
+                    i.fa.fa-leaf
+                    |  fa-leaf
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#gavel')
+                    i.fa.fa-legal
+                    |  fa-legal 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#lemon-o')
+                    i.fa.fa-lemon-o
+                    |  fa-lemon-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#level-down')
+                    i.fa.fa-level-down
+                    |  fa-level-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#level-up')
+                    i.fa.fa-level-up
+                    |  fa-level-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#lightbulb-o')
+                    i.fa.fa-lightbulb-o
+                    |  fa-lightbulb-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#location-arrow')
+                    i.fa.fa-location-arrow
+                    |  fa-location-arrow
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#lock')
+                    i.fa.fa-lock
+                    |  fa-lock
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#magic')
+                    i.fa.fa-magic
+                    |  fa-magic
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#magnet')
+                    i.fa.fa-magnet
+                    |  fa-magnet
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#share')
+                    i.fa.fa-mail-forward
+                    |  fa-mail-forward 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#reply')
+                    i.fa.fa-mail-reply
+                    |  fa-mail-reply 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#mail-reply-all')
+                    i.fa.fa-mail-reply-all
+                    |  fa-mail-reply-all
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#male')
+                    i.fa.fa-male
+                    |  fa-male
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#map-marker')
+                    i.fa.fa-map-marker
+                    |  fa-map-marker
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#meh-o')
+                    i.fa.fa-meh-o
+                    |  fa-meh-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#microphone')
+                    i.fa.fa-microphone
+                    |  fa-microphone
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#microphone-slash')
+                    i.fa.fa-microphone-slash
+                    |  fa-microphone-slash
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus')
+                    i.fa.fa-minus
+                    |  fa-minus
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus-circle')
+                    i.fa.fa-minus-circle
+                    |  fa-minus-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus-square')
+                    i.fa.fa-minus-square
+                    |  fa-minus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus-square-o')
+                    i.fa.fa-minus-square-o
+                    |  fa-minus-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#mobile')
+                    i.fa.fa-mobile
+                    |  fa-mobile
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#mobile')
+                    i.fa.fa-mobile-phone
+                    |  fa-mobile-phone 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#money')
+                    i.fa.fa-money
+                    |  fa-money
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#moon-o')
+                    i.fa.fa-moon-o
+                    |  fa-moon-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#music')
+                    i.fa.fa-music
+                    |  fa-music
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pencil')
+                    i.fa.fa-pencil
+                    |  fa-pencil
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pencil-square')
+                    i.fa.fa-pencil-square
+                    |  fa-pencil-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pencil-square-o')
+                    i.fa.fa-pencil-square-o
+                    |  fa-pencil-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#phone')
+                    i.fa.fa-phone
+                    |  fa-phone
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#phone-square')
+                    i.fa.fa-phone-square
+                    |  fa-phone-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#picture-o')
+                    i.fa.fa-picture-o
+                    |  fa-picture-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plane')
+                    i.fa.fa-plane
+                    |  fa-plane
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus')
+                    i.fa.fa-plus
+                    |  fa-plus
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-circle')
+                    i.fa.fa-plus-circle
+                    |  fa-plus-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-square')
+                    i.fa.fa-plus-square
+                    |  fa-plus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-square-o')
+                    i.fa.fa-plus-square-o
+                    |  fa-plus-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#power-off')
+                    i.fa.fa-power-off
+                    |  fa-power-off
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#print')
+                    i.fa.fa-print
+                    |  fa-print
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#puzzle-piece')
+                    i.fa.fa-puzzle-piece
+                    |  fa-puzzle-piece
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#qrcode')
+                    i.fa.fa-qrcode
+                    |  fa-qrcode
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#question')
+                    i.fa.fa-question
+                    |  fa-question
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#question-circle')
+                    i.fa.fa-question-circle
+                    |  fa-question-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#quote-left')
+                    i.fa.fa-quote-left
+                    |  fa-quote-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#quote-right')
+                    i.fa.fa-quote-right
+                    |  fa-quote-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#random')
+                    i.fa.fa-random
+                    |  fa-random
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#refresh')
+                    i.fa.fa-refresh
+                    |  fa-refresh
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#reply')
+                    i.fa.fa-reply
+                    |  fa-reply
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#reply-all')
+                    i.fa.fa-reply-all
+                    |  fa-reply-all
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#retweet')
+                    i.fa.fa-retweet
+                    |  fa-retweet
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#road')
+                    i.fa.fa-road
+                    |  fa-road
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rocket')
+                    i.fa.fa-rocket
+                    |  fa-rocket
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rss')
+                    i.fa.fa-rss
+                    |  fa-rss
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rss-square')
+                    i.fa.fa-rss-square
+                    |  fa-rss-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#search')
+                    i.fa.fa-search
+                    |  fa-search
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#search-minus')
+                    i.fa.fa-search-minus
+                    |  fa-search-minus
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#search-plus')
+                    i.fa.fa-search-plus
+                    |  fa-search-plus
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#share')
+                    i.fa.fa-share
+                    |  fa-share
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#share-square')
+                    i.fa.fa-share-square
+                    |  fa-share-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#share-square-o')
+                    i.fa.fa-share-square-o
+                    |  fa-share-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#shield')
+                    i.fa.fa-shield
+                    |  fa-shield
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#shopping-cart')
+                    i.fa.fa-shopping-cart
+                    |  fa-shopping-cart
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sign-in')
+                    i.fa.fa-sign-in
+                    |  fa-sign-in
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sign-out')
+                    i.fa.fa-sign-out
+                    |  fa-sign-out
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#signal')
+                    i.fa.fa-signal
+                    |  fa-signal
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sitemap')
+                    i.fa.fa-sitemap
+                    |  fa-sitemap
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#smile-o')
+                    i.fa.fa-smile-o
+                    |  fa-smile-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort')
+                    i.fa.fa-sort
+                    |  fa-sort
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-alpha-asc')
+                    i.fa.fa-sort-alpha-asc
+                    |  fa-sort-alpha-asc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-alpha-desc')
+                    i.fa.fa-sort-alpha-desc
+                    |  fa-sort-alpha-desc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-amount-asc')
+                    i.fa.fa-sort-amount-asc
+                    |  fa-sort-amount-asc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-amount-desc')
+                    i.fa.fa-sort-amount-desc
+                    |  fa-sort-amount-desc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-asc')
+                    i.fa.fa-sort-asc
+                    |  fa-sort-asc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-desc')
+                    i.fa.fa-sort-desc
+                    |  fa-sort-desc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-asc')
+                    i.fa.fa-sort-down
+                    |  fa-sort-down 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-numeric-asc')
+                    i.fa.fa-sort-numeric-asc
+                    |  fa-sort-numeric-asc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-numeric-desc')
+                    i.fa.fa-sort-numeric-desc
+                    |  fa-sort-numeric-desc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort-desc')
+                    i.fa.fa-sort-up
+                    |  fa-sort-up 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#spinner')
+                    i.fa.fa-spinner
+                    |  fa-spinner
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#square')
+                    i.fa.fa-square
+                    |  fa-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#square-o')
+                    i.fa.fa-square-o
+                    |  fa-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star')
+                    i.fa.fa-star
+                    |  fa-star
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star-half')
+                    i.fa.fa-star-half
+                    |  fa-star-half
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star-half-o')
+                    i.fa.fa-star-half-empty
+                    |  fa-star-half-empty 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star-half-o')
+                    i.fa.fa-star-half-full
+                    |  fa-star-half-full 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star-half-o')
+                    i.fa.fa-star-half-o
+                    |  fa-star-half-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#star-o')
+                    i.fa.fa-star-o
+                    |  fa-star-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#subscript')
+                    i.fa.fa-subscript
+                    |  fa-subscript
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#suitcase')
+                    i.fa.fa-suitcase
+                    |  fa-suitcase
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sun-o')
+                    i.fa.fa-sun-o
+                    |  fa-sun-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#superscript')
+                    i.fa.fa-superscript
+                    |  fa-superscript
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tablet')
+                    i.fa.fa-tablet
+                    |  fa-tablet
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tachometer')
+                    i.fa.fa-tachometer
+                    |  fa-tachometer
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tag')
+                    i.fa.fa-tag
+                    |  fa-tag
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tags')
+                    i.fa.fa-tags
+                    |  fa-tags
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tasks')
+                    i.fa.fa-tasks
+                    |  fa-tasks
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#terminal')
+                    i.fa.fa-terminal
+                    |  fa-terminal
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#thumb-tack')
+                    i.fa.fa-thumb-tack
+                    |  fa-thumb-tack
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#thumbs-down')
+                    i.fa.fa-thumbs-down
+                    |  fa-thumbs-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#thumbs-o-down')
+                    i.fa.fa-thumbs-o-down
+                    |  fa-thumbs-o-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#thumbs-o-up')
+                    i.fa.fa-thumbs-o-up
+                    |  fa-thumbs-o-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#thumbs-up')
+                    i.fa.fa-thumbs-up
+                    |  fa-thumbs-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#ticket')
+                    i.fa.fa-ticket
+                    |  fa-ticket
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#times')
+                    i.fa.fa-times
+                    |  fa-times
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#times-circle')
+                    i.fa.fa-times-circle
+                    |  fa-times-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#times-circle-o')
+                    i.fa.fa-times-circle-o
+                    |  fa-times-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tint')
+                    i.fa.fa-tint
+                    |  fa-tint
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-down')
+                    i.fa.fa-toggle-down
+                    |  fa-toggle-down 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-left')
+                    i.fa.fa-toggle-left
+                    |  fa-toggle-left 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-right')
+                    i.fa.fa-toggle-right
+                    |  fa-toggle-right 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-up')
+                    i.fa.fa-toggle-up
+                    |  fa-toggle-up 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#trash-o')
+                    i.fa.fa-trash-o
+                    |  fa-trash-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#trophy')
+                    i.fa.fa-trophy
+                    |  fa-trophy
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#truck')
+                    i.fa.fa-truck
+                    |  fa-truck
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#umbrella')
+                    i.fa.fa-umbrella
+                    |  fa-umbrella
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#unlock')
+                    i.fa.fa-unlock
+                    |  fa-unlock
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#unlock-alt')
+                    i.fa.fa-unlock-alt
+                    |  fa-unlock-alt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#sort')
+                    i.fa.fa-unsorted
+                    |  fa-unsorted 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#upload')
+                    i.fa.fa-upload
+                    |  fa-upload
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#user')
+                    i.fa.fa-user
+                    |  fa-user
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#users')
+                    i.fa.fa-users
+                    |  fa-users
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#video-camera')
+                    i.fa.fa-video-camera
+                    |  fa-video-camera
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#volume-down')
+                    i.fa.fa-volume-down
+                    |  fa-volume-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#volume-off')
+                    i.fa.fa-volume-off
+                    |  fa-volume-off
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#volume-up')
+                    i.fa.fa-volume-up
+                    |  fa-volume-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#exclamation-triangle')
+                    i.fa.fa-warning
+                    |  fa-warning 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#wheelchair')
+                    i.fa.fa-wheelchair
+                    |  fa-wheelchair
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#wrench')
+                    i.fa.fa-wrench
+                    |  fa-wrench
+            section#form-control
+              h2.page-header Form Control Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#check-square')
+                    i.fa.fa-check-square
+                    |  fa-check-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#check-square-o')
+                    i.fa.fa-check-square-o
+                    |  fa-check-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#circle')
+                    i.fa.fa-circle
+                    |  fa-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#circle-o')
+                    i.fa.fa-circle-o
+                    |  fa-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#dot-circle-o')
+                    i.fa.fa-dot-circle-o
+                    |  fa-dot-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus-square')
+                    i.fa.fa-minus-square
+                    |  fa-minus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#minus-square-o')
+                    i.fa.fa-minus-square-o
+                    |  fa-minus-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-square')
+                    i.fa.fa-plus-square
+                    |  fa-plus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-square-o')
+                    i.fa.fa-plus-square-o
+                    |  fa-plus-square-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#square')
+                    i.fa.fa-square
+                    |  fa-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#square-o')
+                    i.fa.fa-square-o
+                    |  fa-square-o
+            section#currency
+              h2.page-header Currency Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#btc')
+                    i.fa.fa-bitcoin
+                    |  fa-bitcoin 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#btc')
+                    i.fa.fa-btc
+                    |  fa-btc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#jpy')
+                    i.fa.fa-cny
+                    |  fa-cny 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#usd')
+                    i.fa.fa-dollar
+                    |  fa-dollar 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#eur')
+                    i.fa.fa-eur
+                    |  fa-eur
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#eur')
+                    i.fa.fa-euro
+                    |  fa-euro 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#gbp')
+                    i.fa.fa-gbp
+                    |  fa-gbp
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#inr')
+                    i.fa.fa-inr
+                    |  fa-inr
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#jpy')
+                    i.fa.fa-jpy
+                    |  fa-jpy
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#krw')
+                    i.fa.fa-krw
+                    |  fa-krw
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#money')
+                    i.fa.fa-money
+                    |  fa-money
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#jpy')
+                    i.fa.fa-rmb
+                    |  fa-rmb 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rub')
+                    i.fa.fa-rouble
+                    |  fa-rouble 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rub')
+                    i.fa.fa-rub
+                    |  fa-rub
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#rub')
+                    i.fa.fa-ruble
+                    |  fa-ruble 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#inr')
+                    i.fa.fa-rupee
+                    |  fa-rupee 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#try')
+                    i.fa.fa-try
+                    |  fa-try
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#try')
+                    i.fa.fa-turkish-lira
+                    |  fa-turkish-lira 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#usd')
+                    i.fa.fa-usd
+                    |  fa-usd
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#krw')
+                    i.fa.fa-won
+                    |  fa-won 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#jpy')
+                    i.fa.fa-yen
+                    |  fa-yen 
+                    span.text-muted (alias)
+            section#text-editor
+              h2.page-header Text Editor Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#align-center')
+                    i.fa.fa-align-center
+                    |  fa-align-center
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#align-justify')
+                    i.fa.fa-align-justify
+                    |  fa-align-justify
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#align-left')
+                    i.fa.fa-align-left
+                    |  fa-align-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#align-right')
+                    i.fa.fa-align-right
+                    |  fa-align-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#bold')
+                    i.fa.fa-bold
+                    |  fa-bold
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#link')
+                    i.fa.fa-chain
+                    |  fa-chain 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chain-broken')
+                    i.fa.fa-chain-broken
+                    |  fa-chain-broken
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#clipboard')
+                    i.fa.fa-clipboard
+                    |  fa-clipboard
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#columns')
+                    i.fa.fa-columns
+                    |  fa-columns
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#files-o')
+                    i.fa.fa-copy
+                    |  fa-copy 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#scissors')
+                    i.fa.fa-cut
+                    |  fa-cut 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#outdent')
+                    i.fa.fa-dedent
+                    |  fa-dedent 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#eraser')
+                    i.fa.fa-eraser
+                    |  fa-eraser
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#file')
+                    i.fa.fa-file
+                    |  fa-file
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#file-o')
+                    i.fa.fa-file-o
+                    |  fa-file-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#file-text')
+                    i.fa.fa-file-text
+                    |  fa-file-text
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#file-text-o')
+                    i.fa.fa-file-text-o
+                    |  fa-file-text-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#files-o')
+                    i.fa.fa-files-o
+                    |  fa-files-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#floppy-o')
+                    i.fa.fa-floppy-o
+                    |  fa-floppy-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#font')
+                    i.fa.fa-font
+                    |  fa-font
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#indent')
+                    i.fa.fa-indent
+                    |  fa-indent
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#italic')
+                    i.fa.fa-italic
+                    |  fa-italic
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#link')
+                    i.fa.fa-link
+                    |  fa-link
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#list')
+                    i.fa.fa-list
+                    |  fa-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#list-alt')
+                    i.fa.fa-list-alt
+                    |  fa-list-alt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#list-ol')
+                    i.fa.fa-list-ol
+                    |  fa-list-ol
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#list-ul')
+                    i.fa.fa-list-ul
+                    |  fa-list-ul
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#outdent')
+                    i.fa.fa-outdent
+                    |  fa-outdent
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#paperclip')
+                    i.fa.fa-paperclip
+                    |  fa-paperclip
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#clipboard')
+                    i.fa.fa-paste
+                    |  fa-paste 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#repeat')
+                    i.fa.fa-repeat
+                    |  fa-repeat
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#undo')
+                    i.fa.fa-rotate-left
+                    |  fa-rotate-left 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#repeat')
+                    i.fa.fa-rotate-right
+                    |  fa-rotate-right 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#floppy-o')
+                    i.fa.fa-save
+                    |  fa-save 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#scissors')
+                    i.fa.fa-scissors
+                    |  fa-scissors
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#strikethrough')
+                    i.fa.fa-strikethrough
+                    |  fa-strikethrough
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#table')
+                    i.fa.fa-table
+                    |  fa-table
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#text-height')
+                    i.fa.fa-text-height
+                    |  fa-text-height
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#text-width')
+                    i.fa.fa-text-width
+                    |  fa-text-width
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#th')
+                    i.fa.fa-th
+                    |  fa-th
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#th-large')
+                    i.fa.fa-th-large
+                    |  fa-th-large
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#th-list')
+                    i.fa.fa-th-list
+                    |  fa-th-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#underline')
+                    i.fa.fa-underline
+                    |  fa-underline
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#undo')
+                    i.fa.fa-undo
+                    |  fa-undo
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chain-broken')
+                    i.fa.fa-unlink
+                    |  fa-unlink 
+                    span.text-muted (alias)
+            section#directional
+              h2.page-header Directional Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-double-down')
+                    i.fa.fa-angle-double-down
+                    |  fa-angle-double-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-double-left')
+                    i.fa.fa-angle-double-left
+                    |  fa-angle-double-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-double-right')
+                    i.fa.fa-angle-double-right
+                    |  fa-angle-double-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-double-up')
+                    i.fa.fa-angle-double-up
+                    |  fa-angle-double-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-down')
+                    i.fa.fa-angle-down
+                    |  fa-angle-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-left')
+                    i.fa.fa-angle-left
+                    |  fa-angle-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-right')
+                    i.fa.fa-angle-right
+                    |  fa-angle-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#angle-up')
+                    i.fa.fa-angle-up
+                    |  fa-angle-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-down')
+                    i.fa.fa-arrow-circle-down
+                    |  fa-arrow-circle-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-left')
+                    i.fa.fa-arrow-circle-left
+                    |  fa-arrow-circle-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-o-down')
+                    i.fa.fa-arrow-circle-o-down
+                    |  fa-arrow-circle-o-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-o-left')
+                    i.fa.fa-arrow-circle-o-left
+                    |  fa-arrow-circle-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-o-right')
+                    i.fa.fa-arrow-circle-o-right
+                    |  fa-arrow-circle-o-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-o-up')
+                    i.fa.fa-arrow-circle-o-up
+                    |  fa-arrow-circle-o-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-right')
+                    i.fa.fa-arrow-circle-right
+                    |  fa-arrow-circle-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-circle-up')
+                    i.fa.fa-arrow-circle-up
+                    |  fa-arrow-circle-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-down')
+                    i.fa.fa-arrow-down
+                    |  fa-arrow-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-left')
+                    i.fa.fa-arrow-left
+                    |  fa-arrow-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-right')
+                    i.fa.fa-arrow-right
+                    |  fa-arrow-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrow-up')
+                    i.fa.fa-arrow-up
+                    |  fa-arrow-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrows')
+                    i.fa.fa-arrows
+                    |  fa-arrows
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrows-alt')
+                    i.fa.fa-arrows-alt
+                    |  fa-arrows-alt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrows-h')
+                    i.fa.fa-arrows-h
+                    |  fa-arrows-h
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrows-v')
+                    i.fa.fa-arrows-v
+                    |  fa-arrows-v
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-down')
+                    i.fa.fa-caret-down
+                    |  fa-caret-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-left')
+                    i.fa.fa-caret-left
+                    |  fa-caret-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-right')
+                    i.fa.fa-caret-right
+                    |  fa-caret-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-down')
+                    i.fa.fa-caret-square-o-down
+                    |  fa-caret-square-o-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-left')
+                    i.fa.fa-caret-square-o-left
+                    |  fa-caret-square-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-right')
+                    i.fa.fa-caret-square-o-right
+                    |  fa-caret-square-o-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-up')
+                    i.fa.fa-caret-square-o-up
+                    |  fa-caret-square-o-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-up')
+                    i.fa.fa-caret-up
+                    |  fa-caret-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-circle-down')
+                    i.fa.fa-chevron-circle-down
+                    |  fa-chevron-circle-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-circle-left')
+                    i.fa.fa-chevron-circle-left
+                    |  fa-chevron-circle-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-circle-right')
+                    i.fa.fa-chevron-circle-right
+                    |  fa-chevron-circle-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-circle-up')
+                    i.fa.fa-chevron-circle-up
+                    |  fa-chevron-circle-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-down')
+                    i.fa.fa-chevron-down
+                    |  fa-chevron-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-left')
+                    i.fa.fa-chevron-left
+                    |  fa-chevron-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-right')
+                    i.fa.fa-chevron-right
+                    |  fa-chevron-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#chevron-up')
+                    i.fa.fa-chevron-up
+                    |  fa-chevron-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#hand-o-down')
+                    i.fa.fa-hand-o-down
+                    |  fa-hand-o-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#hand-o-left')
+                    i.fa.fa-hand-o-left
+                    |  fa-hand-o-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#hand-o-right')
+                    i.fa.fa-hand-o-right
+                    |  fa-hand-o-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#hand-o-up')
+                    i.fa.fa-hand-o-up
+                    |  fa-hand-o-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#long-arrow-down')
+                    i.fa.fa-long-arrow-down
+                    |  fa-long-arrow-down
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#long-arrow-left')
+                    i.fa.fa-long-arrow-left
+                    |  fa-long-arrow-left
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#long-arrow-right')
+                    i.fa.fa-long-arrow-right
+                    |  fa-long-arrow-right
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#long-arrow-up')
+                    i.fa.fa-long-arrow-up
+                    |  fa-long-arrow-up
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-down')
+                    i.fa.fa-toggle-down
+                    |  fa-toggle-down 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-left')
+                    i.fa.fa-toggle-left
+                    |  fa-toggle-left 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-right')
+                    i.fa.fa-toggle-right
+                    |  fa-toggle-right 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#caret-square-o-up')
+                    i.fa.fa-toggle-up
+                    |  fa-toggle-up 
+                    span.text-muted (alias)
+            section#video-player
+              h2.page-header Video Player Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#arrows-alt')
+                    i.fa.fa-arrows-alt
+                    |  fa-arrows-alt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#backward')
+                    i.fa.fa-backward
+                    |  fa-backward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#compress')
+                    i.fa.fa-compress
+                    |  fa-compress
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#eject')
+                    i.fa.fa-eject
+                    |  fa-eject
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#expand')
+                    i.fa.fa-expand
+                    |  fa-expand
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#fast-backward')
+                    i.fa.fa-fast-backward
+                    |  fa-fast-backward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#fast-forward')
+                    i.fa.fa-fast-forward
+                    |  fa-fast-forward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#forward')
+                    i.fa.fa-forward
+                    |  fa-forward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pause')
+                    i.fa.fa-pause
+                    |  fa-pause
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#play')
+                    i.fa.fa-play
+                    |  fa-play
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#play-circle')
+                    i.fa.fa-play-circle
+                    |  fa-play-circle
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#play-circle-o')
+                    i.fa.fa-play-circle-o
+                    |  fa-play-circle-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#step-backward')
+                    i.fa.fa-step-backward
+                    |  fa-step-backward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#step-forward')
+                    i.fa.fa-step-forward
+                    |  fa-step-forward
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#stop')
+                    i.fa.fa-stop
+                    |  fa-stop
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#youtube-play')
+                    i.fa.fa-youtube-play
+                    |  fa-youtube-play
+            section#brand
+              h2.page-header Brand Icons
+              .alert.alert-success
+                ul.margin-bottom-none.padding-left-lg
+                  li All brand icons are trademarks of their respective owners.
+                  li
+                    | The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#adn')
+                    i.fa.fa-adn
+                    |  fa-adn
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#android')
+                    i.fa.fa-android
+                    |  fa-android
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#apple')
+                    i.fa.fa-apple
+                    |  fa-apple
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#bitbucket')
+                    i.fa.fa-bitbucket
+                    |  fa-bitbucket
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#bitbucket-square')
+                    i.fa.fa-bitbucket-square
+                    |  fa-bitbucket-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#btc')
+                    i.fa.fa-bitcoin
+                    |  fa-bitcoin 
+                    span.text-muted (alias)
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#btc')
+                    i.fa.fa-btc
+                    |  fa-btc
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#css3')
+                    i.fa.fa-css3
+                    |  fa-css3
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#dribbble')
+                    i.fa.fa-dribbble
+                    |  fa-dribbble
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#dropbox')
+                    i.fa.fa-dropbox
+                    |  fa-dropbox
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#facebook')
+                    i.fa.fa-facebook
+                    |  fa-facebook
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#facebook-square')
+                    i.fa.fa-facebook-square
+                    |  fa-facebook-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#flickr')
+                    i.fa.fa-flickr
+                    |  fa-flickr
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#foursquare')
+                    i.fa.fa-foursquare
+                    |  fa-foursquare
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#github')
+                    i.fa.fa-github
+                    |  fa-github
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#github-alt')
+                    i.fa.fa-github-alt
+                    |  fa-github-alt
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#github-square')
+                    i.fa.fa-github-square
+                    |  fa-github-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#gittip')
+                    i.fa.fa-gittip
+                    |  fa-gittip
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#google-plus')
+                    i.fa.fa-google-plus
+                    |  fa-google-plus
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#google-plus-square')
+                    i.fa.fa-google-plus-square
+                    |  fa-google-plus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#html5')
+                    i.fa.fa-html5
+                    |  fa-html5
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#instagram')
+                    i.fa.fa-instagram
+                    |  fa-instagram
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#linkedin')
+                    i.fa.fa-linkedin
+                    |  fa-linkedin
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#linkedin-square')
+                    i.fa.fa-linkedin-square
+                    |  fa-linkedin-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#linux')
+                    i.fa.fa-linux
+                    |  fa-linux
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#maxcdn')
+                    i.fa.fa-maxcdn
+                    |  fa-maxcdn
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pagelines')
+                    i.fa.fa-pagelines
+                    |  fa-pagelines
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pinterest')
+                    i.fa.fa-pinterest
+                    |  fa-pinterest
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#pinterest-square')
+                    i.fa.fa-pinterest-square
+                    |  fa-pinterest-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#renren')
+                    i.fa.fa-renren
+                    |  fa-renren
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#skype')
+                    i.fa.fa-skype
+                    |  fa-skype
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#stack-exchange')
+                    i.fa.fa-stack-exchange
+                    |  fa-stack-exchange
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#stack-overflow')
+                    i.fa.fa-stack-overflow
+                    |  fa-stack-overflow
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#trello')
+                    i.fa.fa-trello
+                    |  fa-trello
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tumblr')
+                    i.fa.fa-tumblr
+                    |  fa-tumblr
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#tumblr-square')
+                    i.fa.fa-tumblr-square
+                    |  fa-tumblr-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#twitter')
+                    i.fa.fa-twitter
+                    |  fa-twitter
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#twitter-square')
+                    i.fa.fa-twitter-square
+                    |  fa-twitter-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#vimeo-square')
+                    i.fa.fa-vimeo-square
+                    |  fa-vimeo-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#vk')
+                    i.fa.fa-vk
+                    |  fa-vk
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#weibo')
+                    i.fa.fa-weibo
+                    |  fa-weibo
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#windows')
+                    i.fa.fa-windows
+                    |  fa-windows
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#xing')
+                    i.fa.fa-xing
+                    |  fa-xing
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#xing-square')
+                    i.fa.fa-xing-square
+                    |  fa-xing-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#youtube')
+                    i.fa.fa-youtube
+                    |  fa-youtube
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#youtube-play')
+                    i.fa.fa-youtube-play
+                    |  fa-youtube-play
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#youtube-square')
+                    i.fa.fa-youtube-square
+                    |  fa-youtube-square
+            section#medical
+              h2.page-header Medical Icons
+              .row.fontawesome-icon-list
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#ambulance')
+                    i.fa.fa-ambulance
+                    |  fa-ambulance
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#h-square')
+                    i.fa.fa-h-square
+                    |  fa-h-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#hospital-o')
+                    i.fa.fa-hospital-o
+                    |  fa-hospital-o
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#medkit')
+                    i.fa.fa-medkit
+                    |  fa-medkit
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#plus-square')
+                    i.fa.fa-plus-square
+                    |  fa-plus-square
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#stethoscope')
+                    i.fa.fa-stethoscope
+                    |  fa-stethoscope
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#user-md')
+                    i.fa.fa-user-md
+                    |  fa-user-md
+                .fa-hover.col-md-3.col-sm-4
+                  a(href='#wheelchair')
+                    i.fa.fa-wheelchair
+                    |  fa-wheelchair
+      // main content end
+      // right sidebar start
+      .right-sidebar
+        .search-row
+          input.form-control(type='text', placeholder='Search')
+        .right-stat-bar
+          ul.right-side-accordion
+            li.widget-collapsible
+              a.head.widget-head.red-bg.active.clearfix(href='#')
+                span.pull-left work progress (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row.side-mini-stat.clearfix
+                    .side-graph-info
+                      h4 Target sell
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .target-sell
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 product delivery
+                      p
+                        | 55%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-delivery
+                        .sparkline(data-type='bar', data-resize='true', data-height='30', data-width='90%', data-bar-color='#39b7ab', data-bar-width='5', data-data='[200,135,667,333,526,996,564,123,890,564,455]')
+                  .prog-row.side-mini-stat
+                    .side-graph-info.payment-info
+                      h4 payment collection
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-collection
+                        span.pc-epie-chart(data-percent='45')
+                          span.percent
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 delivery pending
+                      p
+                        | 44%, Deadline 12 june 13
+                    .side-mini-graph
+                      .d-pending
+                  .prog-row.side-mini-stat
+                    .col-md-12
+                      h4 total progress
+                      p
+                        | 50%, Deadline 12 june 13
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(style='width: 50%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='20', role='progressbar')
+                          span.sr-only 50% Complete
+            li.widget-collapsible
+              a.head.widget-head.terques-bg.active.clearfix(href='#')
+                span.pull-left contact online (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Jonathan Smith
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Anjelina Joe
+                      p
+                        | Available
+                    .user-status.text-success
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/chat-avatar2.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') John Doe
+                      p
+                        | Away from Desk
+                    .user-status.text-warning
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Mark Henry
+                      p
+                        | working
+                    .user-status.text-info
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Shila Jones
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  p.text-center
+                    a.view-btn(href='#') View all Contacts
+            li.widget-collapsible
+              a.head.widget-head.purple-bg.active(href='#')
+                span.pull-left  recent activity (3)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | just now
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 2 min ago
+                      p
+                        a(href='#') Jane Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 1 day ago
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+            li.widget-collapsible
+              a.head.widget-head.yellow-bg.active(href='#')
+                span.pull-left  shipment status
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .col-md-12
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only 40% Complete
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                          span.sr-only 70% Completed
+      // right sidebar end
+    // Placed js at the end of the document so the pages load faster
+    // Core js
+    script(src='js/lib/jquery.js')
+    script(src='bs3/js/bootstrap.min.js')
+    script.include(type='text/javascript', src='js/accordion-menu/jquery.dcjqaccordion.2.7.js')
+    script(src='js/scrollTo/jquery.scrollTo.min.js')
+    script(src='assets/easypiechart/jquery.easypiechart.js')
+    script(src='assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js')
+    script(src='js/nicescroll/jquery.nicescroll.js')
+    // Easy Pie Chart
+    script(src='assets/easypiechart/jquery.easypiechart.js')
+    // Sparkline Chart
+    script(src='assets/sparkline/jquery.sparkline.js')
+    // jQuery Flot Chart
+    script(src='assets/flot-chart/jquery.flot.js')
+    script(src='assets/flot-chart/jquery.flot.tooltip.min.js')
+    script(src='assets/flot-chart/jquery.flot.resize.js')
+    script(src='assets/flot-chart/jquery.flot.pie.resize.js')
+    // common script init for all pages
+    script(src='js/scripts.js')

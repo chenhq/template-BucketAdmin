@@ -1,0 +1,1600 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='ThemeBucket')
+    link(rel='shortcut icon', href='images/favicon.png')
+    title Advanced Form
+    // Core CSS
+    link(href='bs3/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/bootstrap-reset.css', rel='stylesheet')
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    link(rel='stylesheet', href='assets/bootstrap-switch-master/build/css/bootstrap3/bootstrap-switch.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-fileupload/bootstrap-fileupload.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-datepicker/css/datepicker.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-timepicker/compiled/timepicker.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-colorpicker/css/colorpicker.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-daterangepicker/daterangepicker-bs3.css')
+    link(rel='stylesheet', type='text/css', href='assets/bootstrap-datetimepicker/css/datetimepicker.css')
+    link(rel='stylesheet', type='text/css', href='assets/jquery-multi-select/css/multi-select.css')
+    link(rel='stylesheet', type='text/css', href='assets/jquery-tags-input/jquery.tagsinput.css')
+    link(rel='stylesheet', type='text/css', href='assets/select2-master/select2.css')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='js/ie8/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body
+    section#container
+      // header start
+      header.header.fixed-top.clearfix
+        // logo start
+        .brand
+          a.logo(href='index.html')
+            img(src='images/logo.png', alt='')
+          .sidebar-toggle-box
+            .fa.fa-bars
+        // logo end
+        #top_menu.nav.notify-row
+          // notification start
+          ul.nav.top-menu
+            // settings start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-tasks
+                span.badge.bg-success 8
+              ul.dropdown-menu.extended.tasks-bar
+                li
+                  p You have 8 pending tasks
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 25% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='45')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Product Delivery
+                        p 45% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='78')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Payment collection
+                        p 87% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='60')
+                        span.percent
+                li
+                  a(href='#')
+                    .task-info.clearfix
+                      .desc.pull-left
+                        h5 Target Sell
+                        p 33% , Deadline  12 June&rsquo;13
+                      span.notification-pie-chart.pull-right(data-percent='90')
+                        span.percent
+                li.external
+                  a(href='#') See All Tasks
+            // settings end
+            // inbox dropdown start
+            li#header_inbox_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-envelope-o
+                span.badge.bg-important 4
+              ul.dropdown-menu.extended.inbox
+                li
+                  p.red You have 4 Mails
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Jonathan Smith
+                      span.time Just now
+                    span.message
+                      | Hello, this is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-2.jpg')
+                    span.subject
+                      span.from Jane Doe
+                      span.time 2 min ago
+                    span.message
+                      | Nice admin template
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini-3.jpg')
+                    span.subject
+                      span.from Tasi sam
+                      span.time 2 days ago
+                    span.message
+                      | This is an example msg.
+                li
+                  a(href='#')
+                    span.photo
+                      img(alt='avatar', src='images/avatar-mini.jpg')
+                    span.subject
+                      span.from Mr. Perfect
+                      span.time 2 hour ago
+                    span.message
+                      | Hi there, its a test
+                li
+                  a(href='#') See all messages
+            // inbox dropdown end
+            // notification dropdown start
+            li#header_notification_bar.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                i.fa.fa-bell-o
+                span.badge.bg-warning 3
+              ul.dropdown-menu.extended.notification
+                li
+                  p Notifications
+                li
+                  .alert.alert-info.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #1 overloaded.
+                li
+                  .alert.alert-danger.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #2 overloaded.
+                li
+                  .alert.alert-success.clearfix
+                    span.alert-icon
+                      i.fa.fa-bolt
+                    .noti-info
+                      a(href='#')  Server #3 overloaded.
+            // notification dropdown end
+          // notification end
+        .top-nav.clearfix
+          // search & user info start
+          ul.nav.pull-right.top-menu
+            li
+              input.form-control.search(type='text', placeholder=' Search')
+            // user login dropdown start
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#')
+                img(alt='', src='images/avatar1_small.jpg')
+                span.username John Doe
+                b.caret
+              ul.dropdown-menu.extended.logout
+                li
+                  a(href='#')
+                    i.fa.fa-suitcase
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-cog
+                    |  Settings
+                li
+                  a(href='login.html')
+                    i.fa.fa-key
+                    |  Log Out
+            // user login dropdown end
+            li
+              .toggle-right-box
+                .fa.fa-bars
+          // search & user info end
+      // header end
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          .leftside-navigation
+            ul#nav-accordion.sidebar-menu
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  span Dashboard
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-laptop
+                  span Layouts
+                ul.sub
+                  li
+                    a(href='boxed_page.html') Boxed Page
+                  li
+                    a(href='horizontal_menu.html') Horizontal Menu
+                  li
+                    a(href='language_switch.html') Language Switch Bar
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-book
+                  span UI Elements
+                ul.sub
+                  li
+                    a(href='general.html') General
+                  li
+                    a(href='buttons.html') Buttons
+                  li
+                    a(href='widget.html') Widget
+                  li
+                    a(href='slider.html') Slider
+                  li
+                    a(href='tree_view.html') Tree View
+                  li
+                    a(href='nestable.html') Nestable
+                  li
+                    a(href='grids.html') Grids
+                  li
+                    a(href='calendar.html') Calender
+                  li
+                    a(href='draggable_portlet.html') Draggable Portlet
+              li
+                a(href='fontawesome.html')
+                  i.fa.fa-bullhorn
+                  span Fontawesome 
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-th
+                  span Data Tables
+                ul.sub
+                  li
+                    a(href='basic_table.html') Basic Table
+                  li
+                    a(href='responsive_table.html') Responsive Table
+                  li
+                    a(href='dynamic_table.html') Dynamic Table
+                  li
+                    a(href='editable_table.html') Editable Table
+              li.sub-menu
+                a.active(href='javascript:;')
+                  i.fa.fa-tasks
+                  span Form Components
+                ul.sub
+                  li
+                    a(href='form_component.html') Form Elements
+                  li.active
+                    a(href='advanced_form.html') Advanced Components
+                  li
+                    a(href='form_wizard.html') Form Wizard
+                  li
+                    a(href='form_validation.html') Form Validation
+                  li
+                    a(href='file_upload.html') Muliple File Upload
+                  li
+                    a(href='dropzone.html') Dropzone
+                  li
+                    a(href='inline_editor.html') Inline Editor
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-envelope
+                  span Mail 
+                ul.sub
+                  li
+                    a(href='mail.html') Inbox
+                  li
+                    a(href='mail_compose.html') Compose Mail
+                  li
+                    a(href='mail_view.html') View Mail
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Charts
+                ul.sub
+                  li
+                    a(href='morris.html') Morris
+                  li
+                    a(href='chartjs.html') Chartjs
+                  li
+                    a(href='flot_chart.html') Flot Charts
+                  li
+                    a(href='c3_chart.html') C3 Chart
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-bar-chart-o
+                  span Maps
+                ul.sub
+                  li
+                    a(href='google_map.html') Google Map
+                  li
+                    a(href='vector_map.html') Vector Map
+              li.sub-menu
+                a(href='javascript:;')
+                  i.fa.fa-glass
+                  span Extra
+                ul.sub
+                  li
+                    a(href='blank.html') Blank Page
+                  li
+                    a(href='lock_screen.html') Lock Screen
+                  li
+                    a(href='profile.html') Profile
+                  li
+                    a(href='invoice.html') Invoice
+                  li
+                    a(href='pricing_table.html') Pricing Table
+                  li
+                    a(href='timeline.html') Timeline
+                  li
+                    a(href='gallery.html') Media Gallery
+                  li
+                    a(href='404.html') 404 Error
+                  li
+                    a(href='500.html') 500 Error
+                  li
+                    a(href='registration.html') Registration
+              li
+                a(href='login.html')
+                  i.fa.fa-user
+                  span Login Page
+          // sidebar menu end
+      // sidebar end
+      // main content start
+      section#main-content
+        section.wrapper
+          // page start
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | Toggle Switches
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body.toggle-heading
+                  h3 Size
+                  .m-bot20
+                    input.switch-large(type='checkbox', checked='')
+                    input(type='checkbox', checked='')
+                    input.switch-small(type='checkbox', checked='')
+                    input.switch-mini(type='checkbox', checked='')
+                    br
+                    br
+                    p Change the size programmatically:
+                    input#dimension-switch(type='checkbox', checked='')
+                    br
+                    br
+                    button#btn-size-large-switch.btn.btn-default.btn-xs Large
+                    button#btn-size-regular-switch.btn.btn-default.btn-xs Regular
+                    button#btn-size-small-switch.btn.btn-default.btn-xs Small
+                    button#btn-size-mini-switch.btn.btn-default.btn-xs Mini
+                    br
+                  h3 Colors
+                  .m-bot20
+                    input(type='checkbox', checked='', data-on='primary', data-off='info')
+                    input(type='checkbox', checked='', data-on='info', data-off='success')
+                    input(type='checkbox', checked='', data-on='success', data-off='warning')
+                    input(type='checkbox', checked='', data-on='warning', data-off='danger')
+                    input(type='checkbox', checked='', data-on='danger', data-off='default')
+                    input(type='checkbox', checked='', data-on='default', data-off='primary')
+                    br
+                    br
+                    span Change the colors programmatically:
+                    input#change-color-switch(type='checkbox', checked='', data-on='default', data-off='primary')
+                    br
+                    br
+                    button#btn-color-on-switch.btn.btn-success.btn-xs Change ON color
+                    button#btn-color-off-switch.btn.btn-danger.btn-xs Change OFF color
+                  .row.m-bot20
+                    .col-md-6
+                      h3 Animation 
+                      div
+                        input#animated-switch(type='checkbox', checked='', data-animated='false')
+                        br
+                        br
+                        button#btn-animate-switch.btn.btn-default.btn-xs Animate
+                        button#btn-dont-animate-switch.btn.btn-default.btn-xs Don&apos;t animate
+                    .col-md-6
+                      h3 Disabled / Readonly
+                      div
+                        input(type='checkbox', checked='', disabled='')
+                        input(type='checkbox', checked='', readonly='')
+                  .row.m-bot20
+                    .col-md-6
+                      h3 Text
+                      div
+                        input#label-switch(type='checkbox', checked='', data-on-label='SI', data-off-label='NO')
+                        br
+                        br
+                        button#btn-label-on-switch.btn.btn-default.btn-xs Change &quot;On&quot; label
+                        button#btn-label-off-switch.btn.btn-default.btn-xs Change &quot;Off&quot; label
+                    .col-md-6
+                      h3 Label Text
+                      div
+                        input(type='checkbox', checked='', data-text-label='TV')
+                  .row
+                    .col-md-6
+                      h3 HTML Text
+                      div
+                        input(type='checkbox', checked='', data-on-label="<i class='fa fa-check'></i>", data-off-label="<i class='fa fa-times'></i>")
+                    .col-md-6
+                      h3 HTML Text Label Icon
+                      div
+                        | Standard 
+                        input.switch-large(type='checkbox', checked='', data-label-icon='fa fa-arrows-alt', data-on-label="<i class='fa fa-check'></i>", data-off-label="<i class='fa fa-times'></i>")
+                        |                                     Font Awesome 
+                        input.switch-large(type='checkbox', checked='', data-label-icon='fa fa-youtube-square', data-on-label="<i class='fa fa-hand-o-up'></i>", data-off-label="<i class='fa fa-hand-o-down'></i>")
+                  h3 Modal
+                  div
+                    a.btn.btn-default(href='#myModal', role='button', data-toggle='modal') Modal
+                  #myModal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+                    .modal-dialog
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                          h4.modal-title Modal
+                        .modal-body
+                          input(type='checkbox', checked='')
+                        .modal-footer
+                          button.btn.btn-default(data-dismiss='modal', aria-hidden='true') Close
+              section.panel
+                header.panel-heading
+                  | Spinner
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .row
+                      .col-md-6
+                        .form-group
+                          label.control-label.col-md-3 Spinner 1
+                          .col-md-5
+                            #spinner1
+                              .input-group.input-small
+                                input.spinner-input.form-control(type='text', maxlength='3', readonly='')
+                                .spinner-buttons.input-group-btn.btn-group-vertical
+                                  button.btn.spinner-up.btn-xs.btn-default(type='button')
+                                    i.fa.fa-angle-up
+                                  button.btn.spinner-down.btn-xs.btn-default(type='button')
+                                    i.fa.fa-angle-down
+                            span.help-block
+                              | basic example
+                      .col-md-6
+                        .form-group
+                          label.control-label.col-md-3 Spinner 2
+                          .col-md-5
+                            #spinner2
+                              .input-group.input-small
+                                input.spinner-input.form-control(type='text', maxlength='3', readonly='')
+                                .spinner-buttons.input-group-btn.btn-group-vertical
+                                  button.btn.spinner-up.btn-xs.btn-info(type='button')
+                                    i.fa.fa-angle-up
+                                  button.btn.spinner-down.btn-xs.btn-info(type='button')
+                                    i.fa.fa-angle-down
+                            span.help-block
+                              | disabled state
+                    .row
+                      .col-md-6
+                        .form-group
+                          label.control-label.col-md-3 Spinner 3
+                          .col-md-9
+                            #spinner3
+                              .input-group(style='width:150px;')
+                                input.spinner-input.form-control(type='text', maxlength='3', readonly='')
+                                .spinner-buttons.input-group-btn
+                                  button.btn.btn-default.spinner-up(type='button')
+                                    i.fa.fa-angle-up
+                                  button.btn.btn-default.spinner-down(type='button')
+                                    i.fa.fa-angle-down
+                            span.help-block
+                              | with max value: 10
+                      .col-md-6
+                        .form-group
+                          label.control-label.col-md-3 Spinner 4
+                          .col-md-9
+                            #spinner4
+                              .input-group(style='width:150px;')
+                                .spinner-buttons.input-group-btn
+                                  button.btn.spinner-up.btn-primary(type='button')
+                                    i.fa.fa-plus
+                                input.spinner-input.form-control(type='text', maxlength='3', readonly='')
+                                .spinner-buttons.input-group-btn
+                                  button.btn.spinner-down.btn-warning(type='button')
+                                    i.fa.fa-minus
+                            span.help-block
+                              | with step: 5
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | Date Pickers
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default Datepicker
+                      .col-md-4.col-xs-11
+                        input.form-control.form-control-inline.input-medium.default-date-picker(size='16', type='text', value='')
+                        span.help-block Select date
+                    .form-group
+                      label.control-label.col-md-3 Start with years viewMode
+                      .col-md-4.col-xs-11
+                        .input-append.date.dpYears(data-date-viewmode='years', data-date-format='dd-mm-yyyy', data-date='12-02-2012')
+                          input.form-control(type='text', readonly='', value='12-02-2012', size='16')
+                          span.input-group-btn.add-on
+                            button.btn.btn-primary(type='button')
+                              i.fa.fa-calendar
+                        span.help-block Select date
+                    .form-group
+                      label.control-label.col-md-3 Months Only
+                      .col-md-4.col-xs-11
+                        .input-append.date.dpMonths(data-date-minviewmode='months', data-date-viewmode='years', data-date-format='mm/yyyy', data-date='102/2012')
+                          input.form-control(type='text', readonly='', value='02/2012', size='16')
+                          span.input-group-btn.add-on
+                            button.btn.btn-primary(type='button')
+                              i.fa.fa-calendar
+                        span.help-block Select month only
+                    .form-group
+                      label.control-label.col-md-3 Date Range
+                      .col-md-4
+                        .input-group.input-large(data-date='13/07/2013', data-date-format='mm/dd/yyyy')
+                          input.form-control.dpd1(type='text', name='from')
+                          span.input-group-addon To
+                          input.form-control.dpd2(type='text', name='to')
+                        span.help-block Select date range
+              section.panel
+                header.panel-heading
+                  | Datetime Pickers
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default input Datetimepicker
+                      .col-md-4
+                        input.form_datetime.form-control(size='16', type='text', value='2012-06-15 14:45', readonly='')
+                    .form-group
+                      label.control-label.col-md-3  Component Datetimepicker
+                      .col-md-4
+                        .input-group.date.form_datetime-component
+                          input.form-control(type='text', readonly='', size='16')
+                          span.input-group-btn
+                            button.btn.btn-primary.date-set(type='button')
+                              i.fa.fa-calendar
+                    .form-group
+                      label.control-label.col-md-3 Advance Datetimepicker
+                      .col-md-4
+                        .input-group.date.form_datetime-adv(data-date='2012-12-21T15:25:00Z')
+                          input.form-control(type='text', readonly='', size='16')
+                          .input-group-btn
+                            button.btn.btn-primary.date-reset(type='button')
+                              i.fa.fa-times
+                            button.btn.btn-warning.date-set(type='button')
+                              i.fa.fa-calendar
+                    .form-group
+                      label.control-label.col-md-3 Meridian Format
+                      .col-md-4
+                        .input-group.date.form_datetime-meridian(data-date='2012-12-21T15:25:00Z')
+                          input.form-control(type='text', readonly='', size='16')
+                          .input-group-btn
+                            button.btn.btn-primary.date-reset(type='button')
+                              i.fa.fa-times
+                            button.btn.btn-warning.date-set(type='button')
+                              i.fa.fa-calendar
+              section.panel
+                header.panel-heading
+                  | Time Pickers
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default Timepicker
+                      .col-md-4
+                        .input-group.bootstrap-timepicker
+                          input.form-control.timepicker-default(type='text')
+                          span.input-group-btn
+                            button.btn.btn-default(type='button')
+                              i.fa.fa-clock-o
+                    .form-group
+                      label.control-label.col-md-3 24hr Timepicker
+                      .col-md-4
+                        .input-group.bootstrap-timepicker
+                          input.form-control.timepicker-24(type='text')
+                          span.input-group-btn
+                            button.btn.btn-default(type='button')
+                              i.fa.fa-clock-o
+              section.panel
+                header.panel-heading
+                  | Color Pickers
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default
+                      .col-md-4
+                        input.colorpicker-default.form-control(type='text', value='#8fff00')
+                    .form-group
+                      label.control-label.col-md-3 RGBA
+                      .col-md-4
+                        input.colorpicker-rgba.form-control(type='text', value='rgb(0,194,255,0.78)', data-color-format='rgba')
+                    .form-group
+                      label.control-label.col-md-3 As Component
+                      .col-md-4.col-xs-11
+                        .input-append.colorpicker-default.color(data-color-format='rgb', data-color='rgb(255, 146, 180)')
+                          input.form-control(type='text', readonly='', value='')
+                          span.input-group-btn.add-on
+                            button.btn.btn-white(type='button', style='padding: 8px')
+                              i(style='background-color: rgb(124, 66, 84);')
+              section.panel
+                header.panel-heading
+                  | Advanced File Input
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default
+                      .col-md-4
+                        input.default(type='file')
+                    .form-group
+                      label.control-label.col-md-3 Without input
+                      .controls.col-md-9
+                        .fileupload.fileupload-new(data-provides='fileupload')
+                          span.btn.btn-white.btn-file
+                            span.fileupload-new
+                              i.fa.fa-paper-clip
+                              |  Select file
+                            span.fileupload-exists
+                              i.fa.fa-undo
+                              |  Change
+                            input.default(type='file')
+                          span.fileupload-preview(style='margin-left:5px;')
+                          a.close.fileupload-exists(href='#', data-dismiss='fileupload', style='float: none; margin-left:5px;')
+                    .form-group.last
+                      label.control-label.col-md-3 Image Upload
+                      .col-md-9
+                        .fileupload.fileupload-new(data-provides='fileupload')
+                          .fileupload-new.thumbnail(style='width: 200px; height: 150px;')
+                            img(src='http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image', alt='')
+                          .fileupload-preview.fileupload-exists.thumbnail(style='max-width: 200px; max-height: 150px; line-height: 20px;')
+                          div
+                            span.btn.btn-white.btn-file
+                              span.fileupload-new
+                                i.fa.fa-paper-clip
+                                |  Select image
+                              span.fileupload-exists
+                                i.fa.fa-undo
+                                |  Change
+                              input.default(type='file')
+                            a.btn.btn-danger.fileupload-exists(href='#', data-dismiss='fileupload')
+                              i.fa.fa-trash
+                              |  Remove
+                        span.label.label-danger NOTE!
+                        span
+                          | Attached image thumbnail is
+                          | supported in Latest Firefox, Chrome, Opera,
+                          | Safari and Internet Explorer 10 only
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | Tags Input
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.col-md-2.control-label Default
+                      .col-md-10
+                        input#tags_1.tags(type='text', value='php,ios,javascript,ruby,android,kindle')
+                    .form-group
+                      label.col-md-2.control-label Fixed Width
+                      .col-md-10
+                        input#tags_2.tags(type='text', value='tag1,tag2')
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | WYSIWYG Editors
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-2 WYSIHTML5 Editor
+                      .col-md-10
+                        textarea.wysihtml5.form-control(rows='9')
+          .row
+            .col-md-12
+              section.panel
+                header.panel-heading
+                  | Multiple Select
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.control-label.col-md-3 Default
+                      .col-md-9
+                        select#my_multi_select1.multi-select(multiple='multiple', name='my_multi_select1[]')
+                          option Dallas Cowboys
+                          option New York Giants
+                          option(selected='') Philadelphia Eagles
+                          option(selected='') Washington Redskins
+                          option Chicago Bears
+                          option Detroit Lions
+                          option Green Bay Packers
+                          option Minnesota Vikings
+                          option(selected='') Atlanta Falcons
+                          option Carolina Panthers
+                          option New Orleans Saints
+                          option Tampa Bay Buccaneers
+                          option Arizona Cardinals
+                          option St. Louis Rams
+                          option San Francisco 49ers
+                          option Seattle Seahawks
+                    .form-group
+                      label.control-label.col-md-3 Grouped Options
+                      .col-md-9
+                        select#my_multi_select2.multi-select(multiple='multiple', name='my_multi_select2[]')
+                          optgroup(label='NFC EAST')
+                            option Dallas Cowboys
+                            option New York Giants
+                            option Philadelphia Eagles
+                            option Washington Redskins
+                          optgroup(label='NFC NORTH')
+                            option Chicago Bears
+                            option Detroit Lions
+                            option Green Bay Packers
+                            option Minnesota Vikings
+                          optgroup(label='NFC SOUTH')
+                            option Atlanta Falcons
+                            option Carolina Panthers
+                            option New Orleans Saints
+                            option Tampa Bay Buccaneers
+                          optgroup(label='NFC WEST')
+                            option Arizona Cardinals
+                            option St. Louis Rams
+                            option San Francisco 49ers
+                            option Seattle Seahawks
+                    .form-group.last
+                      label.control-label.col-md-3 Searchable
+                      .col-md-9
+                        select#my_multi_select3.multi-select(name='country', multiple='')
+                          option(value='AF') Afghanistan
+                          option(value='AL') Albania
+                          option(value='DZ') Algeria
+                          option(value='AS') American Samoa
+                          option(value='AD') Andorra
+                          option(value='AO') Angola
+                          option(value='AI') Anguilla
+                          option(value='AQ') Antarctica
+                          option(value='AR') Argentina
+                          option(value='AM') Armenia
+                          option(value='AW') Aruba
+                          option(value='AU') Australia
+                          option(value='AT') Austria
+                          option(value='AZ') Azerbaijan
+                          option(value='BS') Bahamas
+                          option(value='BH') Bahrain
+                          option(value='BD') Bangladesh
+                          option(value='BB') Barbados
+                          option(value='BY') Belarus
+                          option(value='BE') Belgium
+                          option(value='BZ') Belize
+                          option(value='BJ') Benin
+                          option(value='BM') Bermuda
+                          option(value='BT') Bhutan
+                          option(value='BO') Bolivia
+                          option(value='BA') Bosnia and Herzegowina
+                          option(value='BW') Botswana
+                          option(value='BV') Bouvet Island
+                          option(value='BR') Brazil
+                          option(value='IO') British Indian Ocean Territory
+                          option(value='BN') Brunei Darussalam
+                          option(value='BG') Bulgaria
+                          option(value='BF') Burkina Faso
+                          option(value='BI') Burundi
+                          option(value='KH') Cambodia
+                          option(value='CM') Cameroon
+                          option(value='CA') Canada
+                          option(value='CV') Cape Verde
+                          option(value='KY') Cayman Islands
+                          option(value='CF') Central African Republic
+                          option(value='TD') Chad
+                          option(value='CL') Chile
+                          option(value='CN') China
+                          option(value='CX') Christmas Island
+                          option(value='CC') Cocos (Keeling) Islands
+                          option(value='CO') Colombia
+                          option(value='KM') Comoros
+                          option(value='CG') Congo
+                          option(value='CD') Congo, the Democratic Republic of the
+                          option(value='CK') Cook Islands
+                          option(value='CR') Costa Rica
+                          option(value='CI') Cote d&apos;Ivoire
+                          option(value='HR') Croatia (Hrvatska)
+                          option(value='CU') Cuba
+                          option(value='CY') Cyprus
+                          option(value='CZ') Czech Republic
+                          option(value='DK') Denmark
+                          option(value='DJ') Djibouti
+                          option(value='DM') Dominica
+                          option(value='DO') Dominican Republic
+                          option(value='EC') Ecuador
+                          option(value='EG') Egypt
+                          option(value='SV') El Salvador
+                          option(value='GQ') Equatorial Guinea
+                          option(value='ER') Eritrea
+                          option(value='EE') Estonia
+                          option(value='ET') Ethiopia
+                          option(value='FK') Falkland Islands (Malvinas)
+                          option(value='FO') Faroe Islands
+                          option(value='FJ') Fiji
+                          option(value='FI') Finland
+                          option(value='FR') France
+                          option(value='GF') French Guiana
+                          option(value='PF') French Polynesia
+                          option(value='TF') French Southern Territories
+                          option(value='GA') Gabon
+                          option(value='GM') Gambia
+                          option(value='GE') Georgia
+                          option(value='DE') Germany
+                          option(value='GH') Ghana
+                          option(value='GI') Gibraltar
+                          option(value='GR') Greece
+                          option(value='GL') Greenland
+                          option(value='GD') Grenada
+                          option(value='GP') Guadeloupe
+                          option(value='GU') Guam
+                          option(value='GT') Guatemala
+                          option(value='GN') Guinea
+                          option(value='GW') Guinea-Bissau
+                          option(value='GY') Guyana
+                          option(value='HT') Haiti
+                          option(value='HM') Heard and Mc Donald Islands
+                          option(value='VA') Holy See (Vatican City State)
+                          option(value='HN') Honduras
+                          option(value='HK') Hong Kong
+                          option(value='HU') Hungary
+                          option(value='IS') Iceland
+                          option(value='IN') India
+                          option(value='ID') Indonesia
+                          option(value='IR') Iran (Islamic Republic of)
+                          option(value='IQ') Iraq
+                          option(value='IE') Ireland
+                          option(value='IL') Israel
+                          option(value='IT') Italy
+                          option(value='JM') Jamaica
+                          option(value='JP') Japan
+                          option(value='JO') Jordan
+                          option(value='KZ') Kazakhstan
+                          option(value='KE') Kenya
+                          option(value='KI') Kiribati
+                          option(value='KP') Korea, Democratic People&apos;s Republic of
+                          option(value='KR') Korea, Republic of
+                          option(value='KW') Kuwait
+                          option(value='KG') Kyrgyzstan
+                          option(value='LA') Lao People&apos;s Democratic Republic
+                          option(value='LV') Latvia
+                          option(value='LB') Lebanon
+                          option(value='LS') Lesotho
+                          option(value='LR') Liberia
+                          option(value='LY') Libyan Arab Jamahiriya
+                          option(value='LI') Liechtenstein
+                          option(value='LT') Lithuania
+                          option(value='LU') Luxembourg
+                          option(value='MO') Macau
+                          option(value='MK') Macedonia, The Former Yugoslav Republic of
+                          option(value='MG') Madagascar
+                          option(value='MW') Malawi
+                          option(value='MY') Malaysia
+                          option(value='MV') Maldives
+                          option(value='ML') Mali
+                          option(value='MT') Malta
+                          option(value='MH') Marshall Islands
+                          option(value='MQ') Martinique
+                          option(value='MR') Mauritania
+                          option(value='MU') Mauritius
+                          option(value='YT') Mayotte
+                          option(value='MX') Mexico
+                          option(value='FM') Micronesia, Federated States of
+                          option(value='MD') Moldova, Republic of
+                          option(value='MC') Monaco
+                          option(value='MN') Mongolia
+                          option(value='MS') Montserrat
+                          option(value='MA') Morocco
+                          option(value='MZ') Mozambique
+                          option(value='MM') Myanmar
+                          option(value='NA') Namibia
+                          option(value='NR') Nauru
+                          option(value='NP') Nepal
+                          option(value='NL') Netherlands
+                          option(value='AN') Netherlands Antilles
+                          option(value='NC') New Caledonia
+                          option(value='NZ') New Zealand
+                          option(value='NI') Nicaragua
+                          option(value='NE') Niger
+                          option(value='NG') Nigeria
+                          option(value='NU') Niue
+                          option(value='NF') Norfolk Island
+                          option(value='MP') Northern Mariana Islands
+                          option(value='NO') Norway
+                          option(value='OM') Oman
+                          option(value='PK') Pakistan
+                          option(value='PW') Palau
+                          option(value='PA') Panama
+                          option(value='PG') Papua New Guinea
+                          option(value='PY') Paraguay
+                          option(value='PE') Peru
+                          option(value='PH') Philippines
+                          option(value='PN') Pitcairn
+                          option(value='PL') Poland
+                          option(value='PT') Portugal
+                          option(value='PR') Puerto Rico
+                          option(value='QA') Qatar
+                          option(value='RE') Reunion
+                          option(value='RO') Romania
+                          option(value='RU') Russian Federation
+                          option(value='RW') Rwanda
+                          option(value='KN') Saint Kitts and Nevis
+                          option(value='LC') Saint LUCIA
+                          option(value='VC') Saint Vincent and the Grenadines
+                          option(value='WS') Samoa
+                          option(value='SM') San Marino
+                          option(value='ST') Sao Tome and Principe
+                          option(value='SA') Saudi Arabia
+                          option(value='SN') Senegal
+                          option(value='SC') Seychelles
+                          option(value='SL') Sierra Leone
+                          option(value='SG') Singapore
+                          option(value='SK') Slovakia (Slovak Republic)
+                          option(value='SI') Slovenia
+                          option(value='SB') Solomon Islands
+                          option(value='SO') Somalia
+                          option(value='ZA') South Africa
+                          option(value='GS') South Georgia and the South Sandwich Islands
+                          option(value='ES') Spain
+                          option(value='LK') Sri Lanka
+                          option(value='SH') St. Helena
+                          option(value='PM') St. Pierre and Miquelon
+                          option(value='SD') Sudan
+                          option(value='SR') Suriname
+                          option(value='SJ') Svalbard and Jan Mayen Islands
+                          option(value='SZ') Swaziland
+                          option(value='SE') Sweden
+                          option(value='CH') Switzerland
+                          option(value='SY') Syrian Arab Republic
+                          option(value='TW') Taiwan, Province of China
+                          option(value='TJ') Tajikistan
+                          option(value='TZ') Tanzania, United Republic of
+                          option(value='TH') Thailand
+                          option(value='TG') Togo
+                          option(value='TK') Tokelau
+                          option(value='TO') Tonga
+                          option(value='TT') Trinidad and Tobago
+                          option(value='TN') Tunisia
+                          option(value='TR') Turkey
+                          option(value='TM') Turkmenistan
+                          option(value='TC') Turks and Caicos Islands
+                          option(value='TV') Tuvalu
+                          option(value='UG') Uganda
+                          option(value='UA') Ukraine
+                          option(value='AE') United Arab Emirates
+                          option(value='GB') United Kingdom
+                          option(value='US') United States
+                          option(value='UM') United States Minor Outlying Islands
+                          option(value='UY') Uruguay
+                          option(value='UZ') Uzbekistan
+                          option(value='VU') Vanuatu
+                          option(value='VE') Venezuela
+                          option(value='VN') Viet Nam
+                          option(value='VG') Virgin Islands (British)
+                          option(value='VI') Virgin Islands (U.S.)
+                          option(value='WF') Wallis and Futuna Islands
+                          option(value='EH') Western Sahara
+                          option(value='YE') Yemen
+                          option(value='ZM') Zambia
+                          option(value='ZW') Zimbabwe
+          .row
+            .col-lg-12
+              section.panel
+                header.panel-heading
+                  | Masked inputs
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.col-sm-2.col-sm-2.control-label ISBN 1
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='999-99-999-9999-9')
+                        span.help-inline 999-99-999-9999-9
+                    .form-group
+                      label.col-sm-2.control-label ISBN 2
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='999 99 999 9999 9')
+                        span.help-inline 999 99 999 9999 9
+                    .form-group
+                      label.col-sm-2.control-label ISBN 3
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='999/99/999/9999/9')
+                        span.help-inline 999/99/999/9999/9
+                    .form-group
+                      label.col-sm-2.control-label IPV4
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='999.999.999.9999')
+                        span.help-inline 192.168.110.310
+                    .form-group
+                      label.col-sm-2.control-label IPV6
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='9999:9999:9999:9:999:9999:9999:9999')
+                        span.help-inline 4deg:1340:6547:2:540:h8je:ve73:98pd
+                    .form-group
+                      label.col-sm-2.control-label Tax ID
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='99-9999999')
+                        span.help-inline 99-9999999
+                    .form-group
+                      label.col-sm-2.control-label Phone
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='(999) 999-9999')
+                        span.help-inline (999) 999-9999
+                    .form-group
+                      label.col-sm-2.control-label Currency
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='$ 999,999,999.99')
+                        span.help-inline $ 999,999,999.99
+                    .form-group
+                      label.col-sm-2.control-label Date
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='99/99/9999')
+                        span.help-inline dd/mm/yyyy
+                    .form-group
+                      label.col-sm-2.control-label Date 2
+                      .col-sm-10
+                        input.form-control(type='text', placeholder='', data-mask='99-99-9999')
+                        span.help-inline dd-mm-yyyy
+          .row
+            .col-lg-12
+              section.panel
+                header.panel-heading
+                  | Select2 Components
+                  span.tools.pull-right
+                    a.fa.fa-chevron-down(href='javascript:;')
+                    a.fa.fa-cog(href='javascript:;')
+                    a.fa.fa-times(href='javascript:;')
+                .panel-body
+                  form.form-horizontal(action='#')
+                    .form-group
+                      label.col-lg-2.col-sm-2.control-label Basic select
+                      .col-lg-6
+                        select#source.form-control(style='width: 300px')
+                          optgroup(label='Alaskan/Hawaiian Time Zone')
+                            option(value='AK') Alaska
+                            option(value='HI') Hawaii
+                          optgroup(label='Pacific Time Zone')
+                            option(value='CA') California
+                            option(value='NV') Nevada
+                            option(value='OR') Oregon
+                            option(value='WA') Washington
+                          optgroup(label='Mountain Time Zone')
+                            option(value='AZ') Arizona
+                            option(value='CO') Colorado
+                            option(value='ID') Idaho
+                            option(value='MT') Montana
+                            option(value='NE') Nebraska
+                            option(value='NM') New Mexico
+                            option(value='ND') North Dakota
+                            option(value='UT') Utah
+                            option(value='WY') Wyoming
+                          optgroup(label='Central Time Zone')
+                            option(value='AL') Alabama
+                            option(value='AR') Arkansas
+                            option(value='IL') Illinois
+                            option(value='IA') Iowa
+                            option(value='KS') Kansas
+                            option(value='KY') Kentucky
+                            option(value='LA') Louisiana
+                            option(value='MN') Minnesota
+                            option(value='MS') Mississippi
+                            option(value='MO') Missouri
+                            option(value='OK') Oklahoma
+                            option(value='SD') South Dakota
+                            option(value='TX') Texas
+                            option(value='TN') Tennessee
+                            option(value='WI') Wisconsin
+                          optgroup(label='Eastern Time Zone')
+                            option(value='CT') Connecticut
+                            option(value='DE') Delaware
+                            option(value='FL') Florida
+                            option(value='GA') Georgia
+                            option(value='IN') Indiana
+                            option(value='ME') Maine
+                            option(value='MD') Maryland
+                            option(value='MA') Massachusetts
+                            option(value='MI') Michigan
+                            option(value='NH') New Hampshire
+                            option(value='NJ') New Jersey
+                            option(value='NY') New York
+                            option(value='NC') North Carolina
+                            option(value='OH') Ohio
+                            option(value='PA') Pennsylvania
+                            option(value='RI') Rhode Island
+                            option(value='SC') South Carolina
+                            option(value='VT') Vermont
+                            option(value='VA') Virginia
+                            option(value='WV') West Virginia
+                    .form-group
+                      label.col-lg-2.col-sm-2.control-label Basic select 
+                      .col-lg-6
+                        select#e1.populate(style='width: 300px')
+                          optgroup(label='Alaskan/Hawaiian Time Zone')
+                            option(value='AK') Alaska
+                            option(value='HI') Hawaii
+                          optgroup(label='Pacific Time Zone')
+                            option(value='CA') California
+                            option(value='NV') Nevada
+                            option(value='OR') Oregon
+                            option(value='WA') Washington
+                          optgroup(label='Mountain Time Zone')
+                            option(value='AZ') Arizona
+                            option(value='CO') Colorado
+                            option(value='ID') Idaho
+                            option(value='MT') Montana
+                            option(value='NE') Nebraska
+                            option(value='NM') New Mexico
+                            option(value='ND') North Dakota
+                            option(value='UT') Utah
+                            option(value='WY') Wyoming
+                          optgroup(label='Central Time Zone')
+                            option(value='AL') Alabama
+                            option(value='AR') Arkansas
+                            option(value='IL') Illinois
+                            option(value='IA') Iowa
+                            option(value='KS') Kansas
+                            option(value='KY') Kentucky
+                            option(value='LA') Louisiana
+                            option(value='MN') Minnesota
+                            option(value='MS') Mississippi
+                            option(value='MO') Missouri
+                            option(value='OK') Oklahoma
+                            option(value='SD') South Dakota
+                            option(value='TX') Texas
+                            option(value='TN') Tennessee
+                            option(value='WI') Wisconsin
+                          optgroup(label='Eastern Time Zone')
+                            option(value='CT') Connecticut
+                            option(value='DE') Delaware
+                            option(value='FL') Florida
+                            option(value='GA') Georgia
+                            option(value='IN') Indiana
+                            option(value='ME') Maine
+                            option(value='MD') Maryland
+                            option(value='MA') Massachusetts
+                            option(value='MI') Michigan
+                            option(value='NH') New Hampshire
+                            option(value='NJ') New Jersey
+                            option(value='NY') New York
+                            option(value='NC') North Carolina
+                            option(value='OH') Ohio
+                            option(value='PA') Pennsylvania
+                            option(value='RI') Rhode Island
+                            option(value='SC') South Carolina
+                            option(value='VT') Vermont
+                            option(value='VA') Virginia
+                            option(value='WV') West Virginia
+                    .form-group
+                      label.col-lg-2.col-sm-2.control-label Multi-Value Select
+                      .col-lg-6
+                        select#e9.populate(multiple='', name='e9', style='width:300px')
+                          optgroup(label='Alaskan/Hawaiian Time Zone')
+                            option(value='AK') Alaska
+                            option(value='HI') Hawaii
+                          optgroup(label='Pacific Time Zone')
+                            option(value='CA') California
+                            option(value='NV') Nevada
+                            option(value='OR') Oregon
+                            option(value='WA') Washington
+                          optgroup(label='Mountain Time Zone')
+                            option(value='AZ') Arizona
+                            option(value='CO') Colorado
+                            option(value='ID') Idaho
+                            option(value='MT') Montana
+                            option(value='NE') Nebraska
+                            option(value='NM') New Mexico
+                            option(value='ND') North Dakota
+                            option(value='UT') Utah
+                            option(value='WY') Wyoming
+                          optgroup(label='Central Time Zone')
+                            option(value='AL') Alabama
+                            option(value='AR') Arkansas
+                            option(value='IL') Illinois
+                            option(value='IA') Iowa
+                            option(value='KS') Kansas
+                            option(value='KY') Kentucky
+                            option(value='LA') Louisiana
+                            option(value='MN') Minnesota
+                            option(value='MS') Mississippi
+                            option(value='MO') Missouri
+                            option(value='OK') Oklahoma
+                            option(value='SD') South Dakota
+                            option(value='TX') Texas
+                            option(value='TN') Tennessee
+                            option(value='WI') Wisconsin
+                          optgroup(label='Eastern Time Zone')
+                            option(value='CT') Connecticut
+                            option(value='DE') Delaware
+                            option(value='FL') Florida
+                            option(value='GA') Georgia
+                            option(value='IN') Indiana
+                            option(value='ME') Maine
+                            option(value='MD') Maryland
+                            option(value='MA') Massachusetts
+                            option(value='MI') Michigan
+                            option(value='NH') New Hampshire
+                            option(value='NJ') New Jersey
+                            option(value='NY') New York
+                            option(value='NC') North Carolina
+                            option(value='OH') Ohio
+                            option(value='PA') Pennsylvania
+                            option(value='RI') Rhode Island
+                            option(value='SC') South Carolina
+                            option(value='VT') Vermont
+                            option(value='VA') Virginia
+                            option(value='WV') West Virginia
+                    .form-group
+                      label.col-lg-2.col-sm-2.control-label Placeholders 
+                      .col-lg-6
+                        select#e2.populate.placeholder(style='width:300px')
+                          optgroup(label='Alaskan/Hawaiian Time Zone')
+                            option(value='AK') Alaska
+                            option(value='HI') Hawaii
+                          optgroup(label='Pacific Time Zone')
+                            option(value='CA') California
+                            option(value='NV') Nevada
+                            option(value='OR') Oregon
+                            option(value='WA') Washington
+                          optgroup(label='Mountain Time Zone')
+                            option(value='AZ') Arizona
+                            option(value='CO') Colorado
+                            option(value='ID') Idaho
+                            option(value='MT') Montana
+                            option(value='NE') Nebraska
+                            option(value='NM') New Mexico
+                            option(value='ND') North Dakota
+                            option(value='UT') Utah
+                            option(value='WY') Wyoming
+                          optgroup(label='Central Time Zone')
+                            option(value='AL') Alabama
+                            option(value='AR') Arkansas
+                            option(value='IL') Illinois
+                            option(value='IA') Iowa
+                            option(value='KS') Kansas
+                            option(value='KY') Kentucky
+                            option(value='LA') Louisiana
+                            option(value='MN') Minnesota
+                            option(value='MS') Mississippi
+                            option(value='MO') Missouri
+                            option(value='OK') Oklahoma
+                            option(value='SD') South Dakota
+                            option(value='TX') Texas
+                            option(value='TN') Tennessee
+                            option(value='WI') Wisconsin
+                          optgroup(label='Eastern Time Zone')
+                            option(value='CT') Connecticut
+                            option(value='DE') Delaware
+                            option(value='FL') Florida
+                            option(value='GA') Georgia
+                            option(value='IN') Indiana
+                            option(value='ME') Maine
+                            option(value='MD') Maryland
+                            option(value='MA') Massachusetts
+                            option(value='MI') Michigan
+                            option(value='NH') New Hampshire
+                            option(value='NJ') New Jersey
+                            option(value='NY') New York
+                            option(value='NC') North Carolina
+                            option(value='OH') Ohio
+                            option(value='PA') Pennsylvania
+                            option(value='RI') Rhode Island
+                            option(value='SC') South Carolina
+                            option(value='VT') Vermont
+                            option(value='VA') Virginia
+                            option(value='WV') West Virginia
+                    .form-group
+                      label.col-lg-2.col-sm-2.control-label Minimum Input 
+                      .col-lg-6
+                        select#e3.populate(style='width:300px')
+                          optgroup(label='Alaskan/Hawaiian Time Zone')
+                            option(value='AK') Alaska
+                            option(value='HI') Hawaii
+                          optgroup(label='Pacific Time Zone')
+                            option(value='CA') California
+                            option(value='NV') Nevada
+                            option(value='OR') Oregon
+                            option(value='WA') Washington
+                          optgroup(label='Mountain Time Zone')
+                            option(value='AZ') Arizona
+                            option(value='CO') Colorado
+                            option(value='ID') Idaho
+                            option(value='MT') Montana
+                            option(value='NE') Nebraska
+                            option(value='NM') New Mexico
+                            option(value='ND') North Dakota
+                            option(value='UT') Utah
+                            option(value='WY') Wyoming
+                          optgroup(label='Central Time Zone')
+                            option(value='AL') Alabama
+                            option(value='AR') Arkansas
+                            option(value='IL') Illinois
+                            option(value='IA') Iowa
+                            option(value='KS') Kansas
+                            option(value='KY') Kentucky
+                            option(value='LA') Louisiana
+                            option(value='MN') Minnesota
+                            option(value='MS') Mississippi
+                            option(value='MO') Missouri
+                            option(value='OK') Oklahoma
+                            option(value='SD') South Dakota
+                            option(value='TX') Texas
+                            option(value='TN') Tennessee
+                            option(value='WI') Wisconsin
+                          optgroup(label='Eastern Time Zone')
+                            option(value='CT') Connecticut
+                            option(value='DE') Delaware
+                            option(value='FL') Florida
+                            option(value='GA') Georgia
+                            option(value='IN') Indiana
+                            option(value='ME') Maine
+                            option(value='MD') Maryland
+                            option(value='MA') Massachusetts
+                            option(value='MI') Michigan
+                            option(value='NH') New Hampshire
+                            option(value='NJ') New Jersey
+                            option(value='NY') New York
+                            option(value='NC') North Carolina
+                            option(value='OH') Ohio
+                            option(value='PA') Pennsylvania
+                            option(value='RI') Rhode Island
+                            option(value='SC') South Carolina
+                            option(value='VT') Vermont
+                            option(value='VA') Virginia
+                            option(value='WV') West Virginia
+          // page end
+      // main content end
+      // right sidebar start
+      .right-sidebar
+        .search-row
+          input.form-control(type='text', placeholder='Search')
+        .right-stat-bar
+          ul.right-side-accordion
+            li.widget-collapsible
+              a.head.widget-head.red-bg.active.clearfix(href='#')
+                span.pull-left work progress (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row.side-mini-stat.clearfix
+                    .side-graph-info
+                      h4 Target sell
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .target-sell
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 product delivery
+                      p
+                        | 55%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-delivery
+                        .sparkline(data-type='bar', data-resize='true', data-height='30', data-width='90%', data-bar-color='#39b7ab', data-bar-width='5', data-data='[200,135,667,333,526,996,564,123,890,564,455]')
+                  .prog-row.side-mini-stat
+                    .side-graph-info.payment-info
+                      h4 payment collection
+                      p
+                        | 25%, Deadline 12 june 13
+                    .side-mini-graph
+                      .p-collection
+                        span.pc-epie-chart(data-percent='45')
+                          span.percent
+                  .prog-row.side-mini-stat
+                    .side-graph-info
+                      h4 delivery pending
+                      p
+                        | 44%, Deadline 12 june 13
+                    .side-mini-graph
+                      .d-pending
+                  .prog-row.side-mini-stat
+                    .col-md-12
+                      h4 total progress
+                      p
+                        | 50%, Deadline 12 june 13
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(style='width: 50%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='20', role='progressbar')
+                          span.sr-only 50% Complete
+            li.widget-collapsible
+              a.head.widget-head.terques-bg.active.clearfix(href='#')
+                span.pull-left contact online (5)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Jonathan Smith
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Anjelina Joe
+                      p
+                        | Available
+                    .user-status.text-success
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/chat-avatar2.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') John Doe
+                      p
+                        | Away from Desk
+                    .user-status.text-warning
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1_small.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Mark Henry
+                      p
+                        | working
+                    .user-status.text-info
+                      i.fa.fa-comments-o
+                  .prog-row
+                    .user-thumb
+                      a(href='#')
+                        img(src='images/avatar1.jpg', alt='')
+                    .user-details
+                      h4
+                        a(href='#') Shila Jones
+                      p
+                        | Work for fun
+                    .user-status.text-danger
+                      i.fa.fa-comments-o
+                  p.text-center
+                    a.view-btn(href='#') View all Contacts
+            li.widget-collapsible
+              a.head.widget-head.purple-bg.active(href='#')
+                span.pull-left  recent activity (3)
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | just now
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 2 min ago
+                      p
+                        a(href='#') Jane Doe 
+                        | Purchased new equipments for zonal office setup
+                  .prog-row
+                    .user-thumb.rsn-activity
+                      i.fa.fa-clock-o
+                    .rsn-details
+                      p.text-muted
+                        | 1 day ago
+                      p
+                        a(href='#') Jim Doe 
+                        | Purchased new equipments for zonal office setup
+            li.widget-collapsible
+              a.head.widget-head.yellow-bg.active(href='#')
+                span.pull-left  shipment status
+                span.pull-right.widget-collapse
+                  i.ico-minus
+              ul.widget-container
+                li
+                  .col-md-12
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only 40% Complete
+                    .prog-row
+                      p
+                        | Full sleeve baby wear (SL: 17665)
+                      .progress.progress-xs.mtop10
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                          span.sr-only 70% Completed
+      // right sidebar end
+    // Placed js at the end of the document so the pages load faster
+    // Core js
+    script(src='js/lib/jquery.js')
+    script(src='js/lib/jquery-1.8.3.min.js')
+    script(src='bs3/js/bootstrap.min.js')
+    script(src='js/lib/jquery-ui-1.9.2.custom.min.js')
+    script.include(type='text/javascript', src='js/accordion-menu/jquery.dcjqaccordion.2.7.js')
+    script(src='js/scrollTo/jquery.scrollTo.min.js')
+    script(src='assets/easypiechart/jquery.easypiechart.js')
+    script(src='assets/jQuery-slimScroll-1.3.0/jquery.slimscroll.js')
+    script(src='js/nicescroll/jquery.nicescroll.js')
+    script(src='js/nicescroll/jquery.nicescroll.js')
+    script(src='assets/bootstrap-switch-master/build/js/bootstrap-switch.js')
+    script(type='text/javascript', src='assets/fuelux/js/spinner.min.js')
+    script(type='text/javascript', src='assets/bootstrap-fileupload/bootstrap-fileupload.js')
+    script(type='text/javascript', src='assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js')
+    script(type='text/javascript', src='assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js')
+    script(type='text/javascript', src='assets/bootstrap-datepicker/js/bootstrap-datepicker.js')
+    script(type='text/javascript', src='assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js')
+    script(type='text/javascript', src='assets/bootstrap-daterangepicker/moment.min.js')
+    script(type='text/javascript', src='assets/bootstrap-daterangepicker/daterangepicker.js')
+    script(type='text/javascript', src='assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js')
+    script(type='text/javascript', src='assets/bootstrap-timepicker/js/bootstrap-timepicker.js')
+    script(type='text/javascript', src='assets/jquery-multi-select/js/jquery.multi-select.js')
+    script(type='text/javascript', src='assets/jquery-multi-select/js/jquery.quicksearch.js')
+    script(type='text/javascript', src='assets/bootstrap-inputmask/bootstrap-inputmask.min.js')
+    script(src='assets/jquery-tags-input/jquery.tagsinput.js')
+    script(src='assets/select2-master/select2.js')
+    script(src='js/select2/select-init.js')
+    // common script init for all pages
+    script(src='js/scripts.js')
+    script(src='js/toggle-button/toggle-init.js')
+    script(src='js/advanced-form/advanced-form.js')
+    // Easy Pie Chart
+    script(src='assets/easypiechart/jquery.easypiechart.js')
+    // Sparkline Chart
+    script(src='assets/sparkline/jquery.sparkline.js')
+    // jQuery Flot Chart
+    script(src='assets/flot-chart/jquery.flot.js')
+    script(src='assets/flot-chart/jquery.flot.tooltip.min.js')
+    script(src='assets/flot-chart/jquery.flot.resize.js')
+    script(src='assets/flot-chart/jquery.flot.pie.resize.js')

@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='ThemeBucket')
+    link(rel='shortcut icon', href='images/favicon.png')
+    title Login
+    // Core CSS
+    link(href='bs3/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/bootstrap-reset.css', rel='stylesheet')
+    link(href='assets/font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='js/ie8/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body.login-body
+    .container
+      form.form-signin(action='index.html')
+        h2.form-signin-heading sign in now
+        .login-wrap
+          .user-login-info
+            input.form-control(type='text', placeholder='User ID', autofocus='')
+            input.form-control(type='password', placeholder='Password')
+          label.checkbox
+            input(type='checkbox', value='remember-me')
+            |  Remember me
+            span.pull-right
+              a(data-toggle='modal', href='#myModal')  Forgot Password?
+          button.btn.btn-lg.btn-login.btn-block(type='submit') Sign in
+          .registration
+            | Don&apos;t have an account yet?
+            a(href='registration.html')
+              | Create an account
+        // Modal
+        #myModal.modal.fade(aria-hidden='true', aria-labelledby='myModalLabel', role='dialog', tabindex='-1')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+                h4.modal-title Forgot Password ?
+              .modal-body
+                p Enter your e-mail address below to reset your password.
+                input.form-control.placeholder-no-fix(type='text', name='email', placeholder='Email', autocomplete='off')
+              .modal-footer
+                button.btn.btn-default(data-dismiss='modal', type='button') Cancel
+                button.btn.btn-success(type='button') Submit
+        // modal
+    // Placed js at the end of the document so the pages load faster
+    // Core js
+    script(src='js/lib/jquery.js')
+    script(src='bs3/js/bootstrap.min.js')
